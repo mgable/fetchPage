@@ -16,29 +16,35 @@ curl -XPUT "http://localhost:9200/collectors/tins/_mapping" -d '
             "type": "string"
          },
          "data": {
-         	"price": {
-         		"type": "string"
-         	},
-         	"bids": {
-         		"type": "integer"
-         	},
-         	"watchers": {
-         		"type": "integer"
-         	},
-         	"date": {
-         		"formatted": {
-         			"type": "date"
-         		},
-         		"origin": {
-         			"type": "string"
-         		}
-         	}
+            "type": "object",
+            "properties": {
+            	"price": {
+            		"type": "float"
+            	},
+            	"bids": {
+            		"type": "integer"
+            	},
+            	"watchers": {
+            		"type": "integer"
+            	},
+            	"date": {
+                  "type": "object",
+                  "properties": {
+               		"formatted": {
+               			"type": "date"
+               		},
+               		"origin": {
+               			"type": "string"
+               		}
+                  }
+            	}
+            }
          }
       }
    }
 }'
 
-curl -XPOST 'http://localhost:9200/collectors/tins/_bulk?pretty' --data-binary "@/Users/markgable/Sites/test/fetchPage/data/to_be_indexed/tins.formatted.json"
+curl -XPOST 'http://localhost:9200/collectors/tins/_bulk?pretty' --data-binary "@/Users/markgable/Sites/exercises/fetchPage/data/to_be_indexed/tins.formatted.json"
 
 sleep 1
 

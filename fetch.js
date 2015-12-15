@@ -26,6 +26,12 @@ var req = http.request(options, function(res) {
 	res.on('end', save);
 });
 
+var make = {};
+make.float = makeFloat;
+make.date = makeDate;
+make.integer = makeInteger;
+make.string = makeString;
+
 req.on('error', function(e) {
 	console.log('problem with request: ' + e.message);
 });
@@ -36,7 +42,7 @@ req.end();
 
 function save(){
 	var date = Date.now(),
-	filename =  __dirname + "/data/raw/" + getFileName();
+	filename = __dirname + "/data/test/" + getFileName();
 	fs.writeFileSync(filename, parse(rawData));
 	console.info("wrote file " + filename);
 }
@@ -76,13 +82,34 @@ function removeDoubleEscape(link){
 }
 
 function makeSaleData(line){
-  var obj = {}, order = ["price","date", "bids","watchers"];
-  line.replace(/[^\/]*/g, function(a){
+	var obj = {}, 
+	 	//order = ["price","date", "bids","watchers"];
+	 	attributes = [{name: "price", type: "float"},{name: "date", type: "string"}, {name: "bids", "type": "integer"},{name: "watchers", type: "integer"}];
 
-    if (a) obj[order.shift()] = a;
-  });
-  
-  return obj;
+	 line.replace(/[^\/]*/g, function(data){
+		if (data){
+			var attribute = attributes.shift();			
+			obj[attribute.name] = make[attribute.type](data);
+	 	}
+	 });
+	 
+	 return obj;
+}
+
+function makeFloat(num){
+	return parseFloat(num).toFixed(2);
+}
+
+function makeDate(date){
+	return new Date(date);
+}
+
+function makeInteger(num){
+	return parseInt(num, 10)
+}
+
+function makeString(str){
+	return str.toString();
 }
 
 function getDate(which){
