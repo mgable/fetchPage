@@ -38,7 +38,7 @@ function diff(){
 		var current = today[a];
 		for (var b = 0; b < yesterday.length; b++){
 			var compare = yesterday[b];
-			if (_.isEqual(current, compare)){
+			if (_.isEqual(current.link, compare.link)){
 				yesterday.splice(b,1);
 				continue top;
 			}

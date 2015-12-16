@@ -42,7 +42,7 @@ req.end();
 
 function save(){
 	var date = Date.now(),
-	filename = __dirname + "/data/test/" + getFileName();
+	filename = __dirname + "/data/raw/" + getFileName();
 	fs.writeFileSync(filename, parse(rawData));
 	console.info("wrote file " + filename);
 }
@@ -62,12 +62,12 @@ function myMap(data){
 	var obj = {};
 	obj.title = removeDoubleEscape(data.children[1].data); //title
 	obj.link = decodeLink(data.attribs.href); //link to item
-	obj.data = makeSaleData(removeDoubleEscape(data.attribs.x)); //selling price / time of sale / bids / watchers
+	obj.meta = makeSaleData(removeDoubleEscape(data.attribs.x)); //selling price / time of sale / bids / watchers
 	obj.src = decodeLink(data.children[0].attribs.src); // image src
 
-	obj.data.date = {
-		"formatted": getDate(obj.data.date.replace(/^\-/,'').toLowerCase()),
-		"origin": obj.data.date
+	obj.meta.date = {
+		"formatted": getDate(obj.meta.date.replace(/^\-/,'').toLowerCase()),
+		"origin": obj.meta.date
 	};
 
 	return obj;
@@ -83,21 +83,20 @@ function removeDoubleEscape(link){
 
 function makeSaleData(line){
 	var obj = {}, 
-	 	//order = ["price","date", "bids","watchers"];
 	 	attributes = [{name: "price", type: "float"},{name: "date", type: "string"}, {name: "bids", "type": "integer"},{name: "watchers", type: "integer"}];
 
-	 line.replace(/[^\/]*/g, function(data){
+	line.replace(/[^\/]*/g, function(data){
 		if (data){
 			var attribute = attributes.shift();			
 			obj[attribute.name] = make[attribute.type](data);
 	 	}
-	 });
+	});
 	 
 	 return obj;
 }
 
 function makeFloat(num){
-	return parseFloat(num).toFixed(2);
+	return (Math.round(parseFloat(num) * 100));
 }
 
 function makeDate(date){
