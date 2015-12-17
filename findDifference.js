@@ -3,32 +3,52 @@ require('datejs');
 
 var fs  = require("fs"),
 	_ = require("underscore"),
-	today = getFileContents(__dirname + "/data/raw/" + ( process.argv[2] || getFileName() ) ),
-	yesterday = getFileContents(__dirname + "/data/raw/" +  (process.argv[3] || getYesterdayFileName(process.argv[2]))) || [],
-	store = getFileContents(__dirname + "/data/store/tins.json") || [],
+	config = require('./fetchConfig.js'),
+	util = require('./fetchUtil.js'),
+	category = config.category.name,
+	fileOverwrite = process.argv[2],
+	path = util.getPath(category, fileOverwrite),
+	today = getFileContents(path + "/" + util.getFileName(category, "json", fileOverwrite)), //name, suffix, fileOverwrite
+	yesterday = getFileContents(getYesterdayFileName(fileOverwrite)) || [],
+	storeFile = config.dataRoot + 'store/' + category + "/" + category + ".json",
+	store = getFileContents(storeFile) || [],
 	newest = [];
 
-console.info("the number of items from today is " + today.length);
-console.info("the number of items from yesterday is " + yesterday.length);
+	// console.info("store is");
+	// console.info(config.dataRoot + 'store/' + category + "/" + category + ".json");
+	// console.info(store);
+
+	console.info("today");
+	console.info(path + "/" + util.getFileName(category, "json", fileOverwrite));
+
+	console.info("yestereday");
+	console.info(getYesterdayFileName(fileOverwrite));
+
+	console.info("the number of items from today is " + today.length);
+	console.info("the number of items from yesterday is " + yesterday.length);
 
 diff();
 
-console.info("the number of new items is " + newest.length);
+	console.info("the number of new items is " + newest.length);
 
-save(newest);
+	// console.info(newest);
+
+save(storeFile, newest);
 
 function getYesterdayFileName(filename){
 	if (!filename) {
-		return getFileName(Date.today().add(-1).days());
+		var dateStr = util.getDateString(Date.today().add(-1).days());
+		return util.getPath(category, dateStr) + "/" +  util.getFileName(category, "json", dateStr);
 	} else {
 
 		var dateArray = filename.match(/(\d{4})(\d{2})(\d{2})/).splice(1).map(function(v){return parseInt(v,10)});
 		dateArray.unshift(null);
 
 		var	uncorrectedDate = new (Function.prototype.bind.apply(Date, dateArray)),
-			correctedDate = uncorrectedDate.last().month().add(-1).days();
+			correctedDate = uncorrectedDate.last().month().add(-1).days(),
+			dateStr = util.getDateString(correctedDate);
 
-		return getFileName(correctedDate);
+		return util.getPath(category, dateStr) + "/" + util.getFileName(category, "json", dateStr);
 	}
 }
 
@@ -49,16 +69,8 @@ function diff(){
 	return newest;
 }
 
-function getFileName(date){
-	var d = date || new Date(),
-		filename = "cw_tins_" + d.getFullYear().toString() + (d.getMonth()+1) + d.getDate() + ".json";
-
-	return filename;
-}
-
-function save(data){
-	var newData = store.concat(data),
-		filename = __dirname + "/data/store/tins.json";
+function save(filename, data){
+	var newData = store.concat(data);
 
 	fs.writeFileSync(filename, JSON.stringify(newData));
 	console.info("the total number of items is " + newData.length);

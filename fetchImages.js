@@ -4,11 +4,11 @@ var fs = require('fs'),
 	request = require('request'),
 	fetchUtil = require('./fetchUtil.js'),
 	config = require('./fetchConfig.js'),
-	//file = process.argv[2],
+	fileOverwrite = process.argv[2],
 	name = config.category.name, 
-	path = fetchUtil.getPath(name) + "/",
+	path = fetchUtil.getPath(name, fileOverwrite) + "/",
 	imagePath = path + "images/",
-	file = path + fetchUtil.getFileName(name, "json"),
+	file = path + fetchUtil.getFileName(name, "json", fileOverwrite),
 	index = 0;
 
 var download = function(uri, filename, callback){
@@ -25,15 +25,13 @@ addDirectory(imagePath);
 var contents = JSON.parse(fs.readFileSync(file));
 
 contents.forEach(function(v,i){
-	var src = {original: v.src},
-		suffix = src.original.match(/\w{3,4}$/)[0],
+	var src = {};
+		src.original = v.src.original;
+	var suffix = src.original.match(/\w{3,4}$/)[0],
 		filename = getFileName(index++, suffix);
 
 	src.local = filename;
-
 	v.src = src;
-
-	//console.info(filename);
 
 	download(src.original, filename, function(){
 		console.log('wrote image ' + src.original + ' to ' + filename);

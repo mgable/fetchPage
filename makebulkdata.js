@@ -1,27 +1,38 @@
 "use strict";
-var fs  = require("fs"), filename = "tins.formatted.json",
-	document = JSON.parse(fs.readFileSync(__dirname + "/data/store/tins.json").toString());
+(function() {
+	var fs  = require("fs"), 
+		util = require('./fetchUtil.js'),
+		config = require('./fetchConfig.js'),
+		category = config.category.name,
+		filename = category + ".formatted.json",
+		document = JSON.parse(read(category));
 
-save(filename, parse(document));
+	save(filename, category, parse(document));
 
-function parse(line){
-	var results = '';
+	function parse(line){
+		var results = '';
 
-	console.info(line.length);
+		//console.info(line.length);
 
-	if (typeof line === "object"){
-		line.forEach(function(v,i,a){
-			var str = JSON.stringify({"index":{"_id": (i+1)}});
-			results += str + "\n" + JSON.stringify(v) + "\n";
-		})
+		if (typeof line === "object"){
+			line.forEach(function(v,i,a){
+				var str = JSON.stringify({"index":{"_id": (i+1)}});
+				results += str + "\n" + JSON.stringify(v) + "\n";
+			})
 
-		return results;
+			return results;
+		}
+
+		return line;
 	}
 
-	return line;
-}
+	function save(filename, category, rawData){
+		console.info(config.dataRoot + "to_be_indexed/" + category + "/" + filename);
+		fs.writeFileSync(config.dataRoot + "to_be_indexed/" + category + "/" + filename, rawData);
+		console.info("wrote file " + filename);
+	}
 
-function save(filename, rawData){
-	fs.writeFileSync(__dirname + "/data/to_be_indexed/" + filename, rawData);
-	console.info("wrote file " + filename);
-}
+	function read(category){
+		return fs.readFileSync(config.dataRoot + "store/" + category + "/" + category + ".json").toString()
+	}
+})()

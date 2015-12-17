@@ -2,7 +2,7 @@
 
 var category = {name: "advertising_tins", id: 1175};
 
-var dataRoot = "/Users/markgable/Sites/Data/collectorsDB/";
+var dataRoot = "/Users/markgable/Sites/data/collectorsDB/";
 
 var domain = 'www.collectorsweekly.com';
 

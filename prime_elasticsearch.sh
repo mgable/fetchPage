@@ -19,7 +19,7 @@ curl -XPUT "http://localhost:9200/collectors/tins/_mapping" -d '
             "type": "object",
             "properties": {
             	"price": {
-            		"type": "float"
+            		"type": "integer"
             	},
             	"bids": {
             		"type": "integer"
@@ -44,7 +44,7 @@ curl -XPUT "http://localhost:9200/collectors/tins/_mapping" -d '
    }
 }'
 
-curl -XPOST 'http://localhost:9200/collectors/tins/_bulk?pretty' --data-binary "@/Users/markgable/Sites/exercises/fetchPage/data/to_be_indexed/tins.formatted.json"
+curl -XPOST 'http://localhost:9200/collectors/tins/_bulk?pretty' --data-binary "@/Users/markgable/Sites/data/collectorsDB/to_be_indexed/advertising_tins/advertising_tins.formatted.json"
 
 sleep 1
 
