@@ -4,42 +4,38 @@ var fs = require('fs'),
 	request = require('request'),
 	fetchUtil = require('./fetchUtil.js'),
 	config = require('./fetchConfig.js'),
-	fileOverwrite = process.argv[2],
-	name = config.category.name, 
-	path = fetchUtil.getPath(name, fileOverwrite) + "/",
-	imagePath = path + "images/",
-	file = path + fetchUtil.getFileName(name, "json", fileOverwrite),
 	index = 0;
 
-var download = function(uri, filename, callback){
+var download = function(uri, imagePath, filename, callback){
 	request.head(uri, function(err, res, body){
-		console.log('content-type:', res.headers['content-type']);
-		console.log('content-length:', res.headers['content-length']);
+		// console.log('content-type:', res.headers['content-type']);
+		// console.log('content-length:', res.headers['content-length']);
 
-		request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback);
+		request(uri).pipe(fs.createWriteStream(imagePath + "/" + filename)).on('close', callback);
 	});
 };
 
-addDirectory(imagePath);
+function fetchImages(dataStr, imagePath, items){
+	addDirectory(imagePath);
 
-var contents = JSON.parse(fs.readFileSync(file));
+	items.forEach(function(v,i){
+		var src = {};
+		src.original = v.src;
 
-contents.forEach(function(v,i){
-	var src = {};
-		src.original = v.src.original;
-	var suffix = src.original.match(/\w{3,4}$/)[0],
-		filename = getFileName(index++, suffix);
+		var suffix = src.original.match(/\w{3,4}$/)[0],
+			filename = getFileName(index++, suffix);
 
-	src.local = filename;
-	v.src = src;
+		src.local = dataStr + "/" + filename;
+		v.src = src;
 
-	download(src.original, filename, function(){
-		console.log('wrote image ' + src.original + ' to ' + filename);
+		download(src.original, imagePath, filename, function(){
+			//console.log('wrote image ' + src.original + ' to ' + filename);
+		});
+
 	});
 
- });
-
-fs.writeFileSync(file, JSON.stringify(contents));
+	return items;
+}
 
 function getFileName(index, suffix){
 	return   index + "." + suffix;
@@ -53,3 +49,5 @@ function addDirectory(path){
 		console.info("need to create");
 	}
 }
+
+module.exports = {fetchImages: fetchImages};

@@ -5,33 +5,25 @@ var fs  = require("fs"),
 	_ = require("underscore"),
 	config = require('./fetchConfig.js'),
 	util = require('./fetchUtil.js'),
+	fetch = require('./fetchImages.js'),
 	category = config.category.name,
 	fileOverwrite = process.argv[2],
+	dateStr = fileOverwrite || util.getDateString(),
 	path = util.getPath(category, fileOverwrite),
 	today = getFileContents(path + "/" + util.getFileName(category, "json", fileOverwrite)), //name, suffix, fileOverwrite
 	yesterday = getFileContents(getYesterdayFileName(fileOverwrite)) || [],
 	storeFile = config.dataRoot + 'store/' + category + "/" + category + ".json",
 	store = getFileContents(storeFile) || [],
+	imagePath = config.dataRoot + "store/" + category + "/images/" +  (fileOverwrite || util.getDateString()),
 	newest = [];
-
-	// console.info("store is");
-	// console.info(config.dataRoot + 'store/' + category + "/" + category + ".json");
-	// console.info(store);
-
-	console.info("today");
-	console.info(path + "/" + util.getFileName(category, "json", fileOverwrite));
-
-	console.info("yestereday");
-	console.info(getYesterdayFileName(fileOverwrite));
-
-	console.info("the number of items from today is " + today.length);
-	console.info("the number of items from yesterday is " + yesterday.length);
 
 diff();
 
-	console.info("the number of new items is " + newest.length);
+console.info("the number of new items is " + newest.length);
 
-	// console.info(newest);
+newest = fetch.fetchImages(dateStr, imagePath, newest);
+
+console.info("AFTER the number of new items is " + newest.length);
 
 save(storeFile, newest);
 
@@ -88,12 +80,9 @@ function getFileContents(filename){
 }
 
 function fileExists(filePath){
-    try
-    {
+    try {
         return fs.statSync(filePath).isFile();
-    }
-    catch (err)
-    {
+    } catch (err) {
         return false;
     }
 }

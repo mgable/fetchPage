@@ -13,7 +13,15 @@ curl -XPUT "http://localhost:9200/collectors/tins/_mapping" -d '
             "type": "string"
          },
          "src": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+               "origin": {
+                  "type": "string"
+               },
+               "local": {
+                  "type": "string"
+               }
+            }
          },
          "meta": {
             "type": "object",
