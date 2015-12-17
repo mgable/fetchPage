@@ -1,18 +1,16 @@
 var http = require('http'),
 	fs = require('fs'),
 	cheerio = require('cheerio'),
+	fetchUtil = require('./fetchUtil.js'),
+	fetchConfig = require('./fetchConfig.js'),
 	rawData = "";
 
 require('datejs');
 
-var category = {name: "advertising_tins", id: 1175};
-
-var dataRoot = "/Users/markgable/Sites/Data/collectorsDB/";
-
 var options = {
-	host: 'www.collectorsweekly.com',
+	host: fetchConfig.domain,
 	port: 80,
-	path: '/ajax/category-auctions.php?id=' + category.id + '&sort=completed&limit=1000&offset=0',
+	path: '/ajax/category-auctions.php?id=' + fetchConfig.category.id + '&sort=completed&limit=1000&offset=0',
 	method: 'POST'
 };
 
@@ -26,8 +24,6 @@ var req = http.request(options, function(res) {
 
 	res.on('end', save);
 });
-
-var date = new Date();
 
 var make = {};
 make.float = makeFloat;
@@ -44,27 +40,19 @@ req.write('data\n');
 req.end();
 
 function save(){
-	var filename = makeDirectories(category) + "/" + getFileName();
+	var filename = makeDirectories(fetchConfig.category.name) + "/" + fetchUtil.getFileName(fetchConfig.category.name, "json");
 	fs.writeFileSync(filename, parse(rawData));
 	console.info("wrote file " + filename);
 }
 
-function getFileName(){
-	return category.name + "_" + getDateString() + ".json";
-}
-
-function makeDirectories(category){
-	var path = dataRoot + "raw/" + category.name + "/" + getDateString();
+function makeDirectories(name){
+	var path = fetchUtil.getPath(name);
 	if(! fs.existsSync(path)) {
 		fs.mkdirSync(path);
 	}
 
 	return path;
 }
-
-function getDateString(){
-	return date.getFullYear().toString() + (date.getMonth()+1) + date.getDate()
-} 
 
 function parse(data){
 	$ = cheerio.load(data);
