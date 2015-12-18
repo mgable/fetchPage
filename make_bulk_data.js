@@ -1,8 +1,8 @@
 "use strict";
 (function() {
 	var fs  = require("fs"), 
-		util = require('./fetchUtil.js'),
-		config = require('./fetchConfig.js'),
+		util = require('./util.js'),
+		config = require('./config.js'),
 		category = config.category.name,
 		filename = category + ".formatted.json",
 		document = JSON.parse(read(category));

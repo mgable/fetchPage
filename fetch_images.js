@@ -2,8 +2,8 @@
 
 var fs = require('fs'),
 	request = require('request'),
-	fetchUtil = require('./fetchUtil.js'),
-	config = require('./fetchConfig.js'),
+	fetchUtil = require('./util.js'),
+	config = require('./config.js'),
 	index = 0;
 
 var download = function(uri, imagePath, filename, callback){
