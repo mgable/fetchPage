@@ -27,12 +27,13 @@
 	}
 
 	function save(filename, category, rawData){
-		console.info(config.dataRoot + "to_be_indexed/" + category + "/" + filename);
-		fs.writeFileSync(config.dataRoot + "to_be_indexed/" + category + "/" + filename, rawData);
-		console.info("wrote file " + filename);
+		var path = util.getIndexPathAndFile(category)
+		fs.writeFileSync(path, rawData);
+		console.info("wrote file " + path);
 	}
 
 	function read(category){
-		return fs.readFileSync(config.dataRoot + "store/" + category + "/" + category + ".json").toString()
+		var path = (util.getStoreFilePath(category) + category + ".json");
+		return fs.readFileSync(path).toString()
 	}
 })()

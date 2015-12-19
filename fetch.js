@@ -43,7 +43,7 @@
 	make.string = makeString;
 
 	function save(){
-		var filename = makeDirectories(config.category.name) + "/" + util.getFileName(config.category.name, "json");
+		var filename = makeDirectories(config.category.name) +  util.getFileName(config.category.name, "json");
 		fs.writeFileSync(filename, parse(rawData));
 		console.info("wrote file " + filename);
 	}

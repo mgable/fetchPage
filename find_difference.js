@@ -17,14 +17,14 @@
 		imagePath = util.getImagePath(category, (fileOverwrite || util.getDateString())), //storeFilePath + "/images/" +  (fileOverwrite || util.getDateString()),
 
 		// get data for today and yesterday
-		today = util.getFileContents(rawDataPath + "/" + util.getFileName(category, "json", fileOverwrite)), //name, suffix, fileOverwrite
+		today = util.getFileContents(rawDataPath + util.getFileName(category, "json", fileOverwrite)), //name, suffix, fileOverwrite
 		yesterday = util.getFileContents(getYesterdayFileName(fileOverwrite)) || [],
 
 		// get existing information
-		storeFile =  storeFilePath + "/" + category + ".json",
+		storeFile =  storeFilePath + category + ".json",
 		store = util.getFileContents(storeFile) || [],
 		
-		// the diff for today and yesterday expressed in items
+		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
 
@@ -34,7 +34,7 @@
 	function getYesterdayFileName(filename){
 		if (!filename) {
 			var yesterday = util.getDateString(Date.today().add(-1).days());
-			return util.getRawDataPath(category, yesterday) + "/" +  util.getFileName(category, "json", yesterday);
+			return util.getRawDataPath(category, yesterday) +  util.getFileName(category, "json", yesterday);
 		} else {
 
 			var dateArray = filename.match(/(\d{4})(\d{2})(\d{2})/).splice(1).map(function(v){return parseInt(v,10)});
@@ -44,7 +44,7 @@
 				correctedDate = uncorrectedDate.last().month().add(-1).days(),
 				dateStr = util.getDateString(correctedDate);
 
-			return util.getRawDataPath(category, dateStr) + "/" + util.getFileName(category, "json", dateStr);
+			return util.getRawDataPath(category, dateStr) +  util.getFileName(category, "json", dateStr);
 		}
 	}
 

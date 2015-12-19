@@ -3,7 +3,7 @@
 (function() {
 	var config = require('./config.js'),
 		fs  = require("fs"),
-		today = new Date(), utils = {};
+		today = new Date(), util = {};
 
 	function getDateString(d){
 		var date = d || today;
@@ -15,7 +15,7 @@
 	}
 
 	function getRawDataPath(name, fileOverwrite){
-		return config.dataRoot + "raw/" + name + "/" + (fileOverwrite || getDateString());
+		return config.dataRoot + name + "/raw/"  + (fileOverwrite || getDateString()) + "/";
 	}
 
 	function getFileContents(filename){
@@ -37,20 +37,25 @@
 	}
 
 	function getStoreFilePath(category){
-		return config.dataRoot + 'store/' + category;
+		return config.dataRoot  + category + '/store/';
 	}
 
 	function getImagePath(category, dateStr){
-		return getStoreFilePath(category) + "/images/" +  dateStr;
+		return getStoreFilePath(category) + "images/" +  dateStr + "/";
 	}
 
-	utils.getDateString = getDateString;
-	utils.getFileName = getFileName;
-	utils.getRawDataPath = getRawDataPath;
-	utils.getFileContents = getFileContents;
-	utils.fileExists = fileExists;
-	utils.getStoreFilePath = getStoreFilePath;
-	utils.getImagePath = getImagePath;
+	function getIndexPathAndFile(category){
+		return config.dataRoot +  category + "/to_be_indexed/" + category + ".formatted.json";
+	}
 
-	module.exports = utils;
+	util.getDateString = getDateString;
+	util.getFileName = getFileName;
+	util.getRawDataPath = getRawDataPath;
+	util.getFileContents = getFileContents;
+	util.fileExists = fileExists;
+	util.getStoreFilePath = getStoreFilePath;
+	util.getImagePath = getImagePath;
+	util.getIndexPathAndFile = getIndexPathAndFile;
+
+	module.exports = util;
 })()
