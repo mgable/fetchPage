@@ -6,6 +6,7 @@
 		cheerio = require('cheerio'),
 		util = require('./util.js'),
 		config = require('./config.js'),
+		program = require('commander'),
 		rawData = "";
 
 	require('datejs');

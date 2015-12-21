@@ -7,6 +7,8 @@
 		config = require('./config.js'),
 		util = require('./util.js'),
 		fetch = require('./fetch_images.js'),
+		program = require('commander'),
+
 		category = config.category.name,
 		fileOverwrite = process.argv[2], // an optional date string e.g. '20151213' to retrieve historical data
 		dateStr = fileOverwrite || util.getDateString(), // official date label use for file names and paths
@@ -27,9 +29,27 @@
 		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
+	program
+		.version('0.0.1')
+		.option('-i, --noimages', 'no images')
+		.option('-t, --test', 'testing')
+		.parse(process.argv);
 
-	newest = fetch.fetchImages(dateStr, imagePath, newest);
-	save(storeFile, newest);
+	if (!program.noimages){
+		console.info("adding images");
+		newest = fetch.fetchImages(dateStr, imagePath, newest);
+	} else {
+		console.log('no images');
+	}
+
+	console.info("There are " + newest.length + " new items added for " + dateStr);
+
+	if(!program.test){
+		console.info("saving");
+		save(storeFile, newest);
+	} else {
+		console.info("Just a test - nothing saved");
+	}
 
 	function getYesterdayFileName(filename){
 		if (!filename) {
