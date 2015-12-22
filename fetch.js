@@ -7,7 +7,8 @@
 		util = require('./util.js'),
 		config = require('./config.js'),
 		program = require('commander'),
-		rawData = "";
+		Q = require("q"),
+		rawData = [];
 
 	require('datejs');
 
@@ -18,35 +19,62 @@
 		method: 'POST'
 	};
 
-	var req = http.request(options, function(res) {
-		console.log('STATUS: ' + res.statusCode);
-		console.log('HEADERS: ' + JSON.stringify(res.headers));
-		res.setEncoding('utf8');
-		res.on('data', function (chunk) {
-			rawData += chunk;
-		});
-
-		res.on('end', save);
-	});
-
-	req.on('error', function(e) {
-		console.log('problem with request: ' + e.message);
-	});
-
-	// write data to request body
-	req.write('data\n');
-	req.end();
-
 	var make = {};
 	make.float = makeFloat;
 	make.date = makeDate;
 	make.integer = makeInteger;
 	make.string = makeString;
 
-	function save(){
+	program
+		.version('0.0.1')
+		.option('-t, --test', 'testing')
+		.parse(process.argv);
+
+	// the meat of the matter
+	fetchPage(options).then(function(data){_process(data)});
+
+	function _process(data){
+		var document = parse(data);
+		save (document);
+	}
+
+	function fetchPage(options){
+		var deferred = Q.defer(),
+			container = [],
+			req = http.request(options, function(res) {
+
+			res.setEncoding('utf8');
+
+			res.on('data', function (chunk) {
+				container += chunk;
+			});
+
+			res.on('end', function(){
+				return deferred.resolve(container)
+			});
+		});
+
+		req.on('error', function(e) {
+			console.error('problem with request: ' + e.message);
+			deferred.reject;
+		});
+
+		// write data to request body
+		req.write('data\n');
+		req.end();
+
+		return deferred.promise
+	}
+
+	function save(data){
 		var filename = makeDirectories(config.category.name) +  util.getFileName(config.category.name, "json");
-		fs.writeFileSync(filename, parse(rawData));
-		console.info("wrote file " + filename);
+		if (!program.test){
+			fs.writeFileSync(filename, data);
+			console.info("wrote file " + filename);
+		} else {
+			console.info(data);
+			console.info("just testing");
+		}
 	}
 
 	function makeDirectories(name){
