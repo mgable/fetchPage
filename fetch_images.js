@@ -31,7 +31,7 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 		src.original = v.src;
 
 		var suffix = src.original.match(dateRE)[0],
-			filename = getFileName(index++, suffix);
+			filename = getFileName(item.id, suffix);
 
 		src.local =  makeLocalImagePath(dataStr, filename);
 		v.src = src;
@@ -51,8 +51,8 @@ function makeLocalImagePath(dataStr, filename){
 	return dataStr + "/" + filename
 }
 
-function getFileName(index, suffix){
-	return   index + "." + suffix;
+function getFileName(id, suffix){
+	return   id + "-t." + suffix;
 }
 
 function addDirectory(path){
