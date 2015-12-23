@@ -7,10 +7,16 @@
 		config = require('./config.js'),
 		util = require('./util.js'),
 		fetch = require('./fetch_images.js'),
-		program = require('commander'),
+		program = require('commander');
 
-		category = config.category.name,
-		fileOverwrite = process.argv[2], // an optional date string e.g. '20151213' to retrieve historical data
+	program
+		.version('0.0.1')
+		.option('-i, --noimages', 'no images')
+		.option('-t, --test', 'testing')
+		.parse(process.argv);
+
+	var	category = config.category.name,
+		fileOverwrite = program.args[0], // an optional date string e.g. '20151213' to retrieve historical data
 		dateStr = fileOverwrite || util.getDateString(), // official date label use for file names and paths
 
 		// make all paths
@@ -29,18 +35,7 @@
 		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
-	program
-		.version('0.0.1')
-		.option('-i, --noimages', 'no images')
-		.option('-t, --test', 'testing')
-		.parse(process.argv);
-
-	if (!program.noimages){
-		console.info("adding images");
-		newest = fetch.fetchImages(dateStr, imagePath, newest);
-	} else {
-		console.log('no images');
-	}
+	newest = fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
 
 	console.info("There are " + newest.length + " new items added for " + dateStr);
 

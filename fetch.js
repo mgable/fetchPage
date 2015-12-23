@@ -8,14 +8,19 @@
 		config = require('./config.js'),
 		program = require('commander'),
 		Q = require("q"),
+		url = require('url'),
+		category = config.category.name,
 		rawData = [];
+
+		console.info(util.getPageTemplate(config.category.id));
 
 	require('datejs');
 
 	var options = {
 		host: config.domain,
 		port: 80,
-		path: '/ajax/category-auctions.php?id=' + config.category.id + '&sort=completed&limit=1000&offset=0',
+		path: util.getPageTemplate(config.category.id),
+		//,
 		method: 'POST'
 	};
 
@@ -43,16 +48,16 @@
 			container = [],
 			req = http.request(options, function(res) {
 
-			res.setEncoding('utf8');
+				res.setEncoding('utf8');
 
-			res.on('data', function (chunk) {
-				container += chunk;
-			});
+				res.on('data', function (chunk) {
+					container += chunk;
+				});
 
-			res.on('end', function(){
-				return deferred.resolve(container)
+				res.on('end', function(){
+					return deferred.resolve(container)
+				});
 			});
-		});
 
 		req.on('error', function(e) {
 			console.error('problem with request: ' + e.message);
@@ -67,14 +72,27 @@
 	}
 
 	function save(data){
-		var filename = makeDirectories(config.category.name) +  util.getFileName(config.category.name, "json");
+		var filename = makeDirectories(category) +  util.getFileName(category, "json");
 		if (!program.test){
 			fs.writeFileSync(filename, data);
 			console.info("wrote file " + filename);
 		} else {
 			console.info(data);
-			console.info("just testing");
+			console.info("************* Just Testing ****************");
 		}
+	}
+
+	function makeOptions(urlstr){
+		var urlObj = (url.parse(urlstr));
+
+		var	options = {
+			host: urlObj.host,
+			port: 80,
+			path: urlObj.path,
+			method: 'GET'
+		};
+
+		return options;
 	}
 
 	function makeDirectories(name){
@@ -130,7 +148,7 @@
 	}
 
 	function makeFloat(num){
-		return (Math.round(parseFloat(num) * 100));
+		return Math.round(parseFloat(num.replace(/,/,"")) * 100);
 	}
 
 	function makeDate(date){

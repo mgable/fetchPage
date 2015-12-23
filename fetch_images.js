@@ -4,6 +4,7 @@ var fs = require('fs'),
 	request = require('request'),
 	fetchUtil = require('./util.js'),
 	config = require('./config.js'),
+	_ = require('underscore'),
 	index = 0;
 
 var download = function(uri, imagePath, filename, callback){
@@ -15,9 +16,15 @@ var download = function(uri, imagePath, filename, callback){
 	});
 };
 
-function fetchImages(dataStr, imagePath, items){
-	var dateRE = /\w{3,4}$/;
+function fetchImages(dataStr, imagePath, items, downloadImages, callback){
+	var dateRE = /\w{3,4}$/,
+		callback = callback || _.noop;
+
 	addDirectory(imagePath);
+
+	if (!downloadImages) {
+		console.info("not downloading images");
+	};
 
 	items.forEach(function(v,i){
 		var src = {};
@@ -29,9 +36,11 @@ function fetchImages(dataStr, imagePath, items){
 		src.local =  makeLocalImagePath(dataStr, filename);
 		v.src = src;
 
-		download(src.original, imagePath, filename, function(){
-			//console.log('wrote image ' + src.original + ' to ' + filename);
-		});
+		if (downloadImages){	
+			download(src.original, imagePath, filename, function(){
+				callback();
+			});
+		}
 
 	});
 

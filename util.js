@@ -18,6 +18,10 @@
 		return config.dataRoot + name + "/raw/"  + (fileOverwrite || getDateString()) + "/";
 	}
 
+	function getPageTemplate(id){
+		return config.pageUrlTemplate.replace(/( \*{3}) config\.category\.id (\*{3} )/, id);
+	}
+
 	function getFileContents(filename){
 		if (!filename) return false;
 			
@@ -56,6 +60,7 @@
 	util.getStoreFilePath = getStoreFilePath;
 	util.getImagePath = getImagePath;
 	util.getIndexPathAndFile = getIndexPathAndFile;
+	util.getPageTemplate = getPageTemplate;
 
 	module.exports = util;
 })()
