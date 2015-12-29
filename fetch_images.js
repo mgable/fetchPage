@@ -26,15 +26,15 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 		console.info("not downloading images");
 	};
 
-	items.forEach(function(v,i){
+	items.forEach(function(item,index){
 		var src = {};
-		src.original = v.src;
+		src.original = item.src;
 
 		var suffix = src.original.match(dateRE)[0],
 			filename = getFileName(item.id, suffix);
 
 		src.local =  makeLocalImagePath(dataStr, filename);
-		v.src = src;
+		item.src = src;
 
 		if (downloadImages){	
 			download(src.original, imagePath, filename, function(){

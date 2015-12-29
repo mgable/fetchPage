@@ -57,6 +57,6 @@ curl -XPUT "http://localhost:9200/collectors/tins/_mapping" -d '
 
 curl -XPOST 'http://localhost:9200/collectors/tins/_bulk?pretty' --data-binary "@/Users/markgable/Sites/data/collectorsDB/advertising_tins/to_be_indexed/advertising_tins.formatted.json"
 
-sleep 1
+sleep 3
 
 curl -XGET 'http://localhost:9200/_cat/indices?v'
