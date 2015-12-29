@@ -47,6 +47,48 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 	return items;
 }
 
+function fetchAdditionalImages(item){
+
+}
+
+function collectAdditionalImages(data){
+	var $ = cheerio.load(data),
+		results = [];
+	$(".lst.icon").first().find("li img").each(function(i,v){
+		results.push(v.attribs.src)
+	});
+
+	return results;
+}
+
+function downloadAdditionalImages(item, additionalImages){
+	item.images = {};
+	item.images.original = additionalImages;
+	item.images.local = [];
+
+	additionalImages.forEach(function(v,index){
+		var filename = item.id + "_i_" + index + ".jpg",
+			largerImageUrl = makeLargerImageUrl(v);
+		util.download(largerImageUrl, "./test/", filename, function(){console.info("done downloading");}); //uri, imagePath, filename, callback
+		item.images.local.push("./test/" + filename);
+	});
+}
+
+function getCompletedItemLink(data){
+	var $ = cheerio.load(data);
+	return $(".vi-inl-lnk.vi-cvip-prel3 a")[0].attribs.href;
+}
+
+function getCompletedItemUrl(urlstr){
+	var urlObj = (url.parse(urlstr, true));
+	return urlObj.query.mpre
+}
+
+function makeLargerImageUrl(url){
+	return url.replace(/(?!s\-l)64/, "600");
+}
+
+
 function makeLocalImagePath(dataStr, filename){
 	return dataStr + "/" + filename
 }
