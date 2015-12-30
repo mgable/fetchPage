@@ -3,6 +3,9 @@
 (function() {
 	var config = require('./config.js'),
 		fs  = require("fs"),
+		Q = require("q"),
+		http = require("http"),
+		url = require('url'),
 		today = new Date(), util = {};
 
 	function getDateString(d){
@@ -56,6 +59,47 @@
 		return config.dataRoot +  category + "/to_be_indexed/" + category + ".formatted.json";
 	}
 
+	function fetchPage(options){
+		var deferred = Q.defer(),
+			container = [],
+			req = http.request(options, function(res) {
+
+				res.setEncoding('utf8');
+
+				res.on('data', function (chunk) {
+					container += chunk;
+				});
+
+				res.on('end', function(){
+					return deferred.resolve(container)
+				});
+			});
+
+		req.on('error', function(e) {
+			console.error('problem with request: ' + e.message);
+			deferred.reject;
+		});
+
+		// write data to request body
+		req.write('data\n');
+		req.end();
+
+		return deferred.promise
+	}
+
+	function makeOptions(urlstr){
+		var urlObj = (url.parse(urlstr));
+
+		var	options = {
+			host: urlObj.host,
+			port: 80,
+			path: urlObj.path,
+			method: 'GET'
+		};
+
+		return options;
+	}
+
 	util.getDateString = getDateString;
 	util.getFileName = getFileName;
 	util.getRawDataPath = getRawDataPath;
@@ -66,6 +110,8 @@
 	util.getIndexPathAndFile = getIndexPathAndFile;
 	util.getPageTemplate = getPageTemplate;
 	util.generateUID = generateUID;
+	util.fetchPage = fetchPage;
+	util.makeOptions = makeOptions;
 
 	module.exports = util;
 })()

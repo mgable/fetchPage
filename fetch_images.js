@@ -4,6 +4,9 @@ var fs = require('fs'),
 	request = require('request'),
 	fetchUtil = require('./util.js'),
 	config = require('./config.js'),
+	cheerio = require('cheerio'),
+	url = require('url'),
+	util = require('./util.js'),
 	_ = require('underscore'),
 	index = 0;
 
@@ -47,8 +50,13 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 	return items;
 }
 
-function fetchAdditionalImages(item){
-
+function fetchAdditionalImages(items){
+	items.forEach(function(item,index){
+		util.fetchPage(getCompletedItemUrl(item.link)).then(function(data){
+			var link = getCompletedItemLink(data);
+			console.info(link);
+		});
+	});
 }
 
 function collectAdditionalImages(data){
@@ -69,8 +77,9 @@ function downloadAdditionalImages(item, additionalImages){
 	additionalImages.forEach(function(v,index){
 		var filename = item.id + "_i_" + index + ".jpg",
 			largerImageUrl = makeLargerImageUrl(v);
-		util.download(largerImageUrl, "./test/", filename, function(){console.info("done downloading");}); //uri, imagePath, filename, callback
-		item.images.local.push("./test/" + filename);
+			console.info("downloading - " + largerImageUrl);
+		//util.download(largerImageUrl, "./test/", filename, function(){console.info("done downloading");}); //uri, imagePath, filename, callback
+		//item.images.local.push("./test/" + filename);
 	});
 }
 
@@ -103,4 +112,4 @@ function addDirectory(path){
 	}
 }
 
-module.exports = {fetchImages: fetchImages};
+module.exports = {fetchImages: fetchImages, fetchAdditionalImages: fetchAdditionalImages};

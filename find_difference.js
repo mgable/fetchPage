@@ -35,13 +35,15 @@
 		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
-	newest = fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
+	//newest = fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
+
+	fetch.fetchAdditionalImages(newest);
 
 	console.info("There are " + newest.length + " new items added for " + dateStr);
 
 	if(!program.test){
 		console.info("saving");
-		save(storeFile, newest);
+		//save(storeFile, newest);
 	} else {
 		console.info("Just a test - nothing saved");
 	}
