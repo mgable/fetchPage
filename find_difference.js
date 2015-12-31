@@ -35,15 +35,18 @@
 		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
-	//newest = fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
+		fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
+		// SHOULD BE THEN
 
-	fetch.fetchAdditionalImages(newest);
+		fetch.fetchAdditionalImages(newest, imagePath);
+		// SHOULD BE THEN
 
 	console.info("There are " + newest.length + " new items added for " + dateStr);
 
+	// THIS SHOULD BE IN THE THEN STATEMENT
 	if(!program.test){
 		console.info("saving");
-		//save(storeFile, newest);
+		save(storeFile, newest);
 	} else {
 		console.info("Just a test - nothing saved");
 	}

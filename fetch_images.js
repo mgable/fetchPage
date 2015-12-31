@@ -10,7 +10,8 @@ var fs = require('fs'),
 	_ = require('underscore'),
 	index = 0;
 
-var download = function(uri, imagePath, filename, callback){
+function download(uri, imagePath, filename, callback){
+	var callback = callback || _.noop;
 	request.head(uri, function(err, res, body){
 		// console.log('content-type:', res.headers['content-type']);
 		// console.log('content-length:', res.headers['content-length']);
@@ -50,26 +51,35 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 	return items;
 }
 
-function fetchAdditionalImages(items){
-	items.forEach(function(item,index){
-		util.fetchPage(getCompletedItemUrl(item.link)).then(function(data){
-			var link = getCompletedItemLink(data);
-			console.info(link);
-		});
-	});
-}
+function fetchAdditionalImages(items, imagePath){
+	var results = [];
 
-function collectAdditionalImages(data){
-	var $ = cheerio.load(data),
-		results = [];
-	$(".lst.icon").first().find("li img").each(function(i,v){
-		results.push(v.attribs.src)
+	items.forEach(function(item,index){
+		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function(data){
+			return getCompletedItemLink(data);
+		}).then(function (data){
+			util.fetchPage(util.makeOptions(data)).then(function(data){
+				var additionalImages = collectAdditionalImages(data);
+				results.push(downloadAdditionalImages(item, additionalImages, imagePath));
+			});
+		});
 	});
 
 	return results;
 }
 
-function downloadAdditionalImages(item, additionalImages){
+function collectAdditionalImages(data){
+	var $ = cheerio.load(data),
+		results = [];
+
+	$(".lst.icon").first().find("li img").each(function(i,v){
+		results.push(v.attribs.src);
+	});
+
+	return results;
+}
+
+function downloadAdditionalImages(item, additionalImages, imagePath){
 	item.images = {};
 	item.images.original = additionalImages;
 	item.images.local = [];
@@ -77,10 +87,13 @@ function downloadAdditionalImages(item, additionalImages){
 	additionalImages.forEach(function(v,index){
 		var filename = item.id + "_i_" + index + ".jpg",
 			largerImageUrl = makeLargerImageUrl(v);
-			console.info("downloading - " + largerImageUrl);
-		//util.download(largerImageUrl, "./test/", filename, function(){console.info("done downloading");}); //uri, imagePath, filename, callback
-		//item.images.local.push("./test/" + filename);
+		
+		console.info("downloading  - " + largerImageUrl);
+		download(largerImageUrl, imagePath, filename); //uri, imagePath, filename, callback
+		item.images.local.push(imagePath + filename);
 	});
+
+	return item;
 }
 
 function getCompletedItemLink(data){
