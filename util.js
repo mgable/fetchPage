@@ -7,8 +7,12 @@
 
 	function getDateString(d){
 		var date = d || today;
-		return date.getFullYear().toString() + (date.getMonth()+1) + date.getDate();
+		return date.getFullYear().toString() + pad(date.getMonth()+1) + pad(date.getDate());
 	} 
+
+	function pad(date){
+		return ("00" + date).slice(-2);
+	}
 
 	function getFileName(name, suffix, fileOverwrite){
 		return name + "_" + (fileOverwrite || getDateString()) + "." + suffix;
