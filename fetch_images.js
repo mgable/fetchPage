@@ -24,7 +24,7 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 	var dateRE = /\w{3,4}$/,
 		callback = callback || _.noop;
 
-	addDirectory(imagePath);
+		addDirectory(imagePath);
 
 	if (!downloadImages) {
 		console.info("not downloading images");
@@ -35,13 +35,18 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 		src.original = item.src;
 
 		var suffix = src.original.match(dateRE)[0],
-			filename = getFileName(item.id, suffix);
+			filename = getFileName(item.id, suffix),
+			itemImagePath = addDirectory(imagePath + item.id);
+
+			console.info(itemImagePath);
+
+			console.info(filename);
 
 		src.local =  makeLocalImagePath(dataStr, filename);
 		item.src = src;
 
 		if (downloadImages){	
-			download(src.original, imagePath, filename, function(){
+			download(src.original, itemImagePath, filename, function(){
 				callback();
 			});
 		}
@@ -51,8 +56,7 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 	return items;
 }
 
-function fetchAdditionalImages(items, imagePath){
-	var results = [];
+function fetchAdditionalImages(items, imagePath, downloadImages){
 
 	items.forEach(function(item,index){
 		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function(data){
@@ -60,12 +64,11 @@ function fetchAdditionalImages(items, imagePath){
 		}).then(function (data){
 			util.fetchPage(util.makeOptions(data)).then(function(data){
 				var additionalImages = collectAdditionalImages(data);
-				results.push(downloadAdditionalImages(item, additionalImages, imagePath));
+				downloadAdditionalImages(item, additionalImages, imagePath);
 			});
 		});
 	});
 
-	return results;
 }
 
 function collectAdditionalImages(data){
@@ -85,15 +88,14 @@ function downloadAdditionalImages(item, additionalImages, imagePath){
 	item.images.local = [];
 
 	additionalImages.forEach(function(v,index){
-		var filename = item.id + "_i_" + index + ".jpg",
-			largerImageUrl = makeLargerImageUrl(v);
+		var filename = "i_" + index + ".jpg",
+			largerImageUrl = makeLargerImageUrl(v),
+			itemImagePath = imagePath + "/" + item.id + "/";
 		
 		console.info("downloading  - " + largerImageUrl);
-		download(largerImageUrl, imagePath, filename); //uri, imagePath, filename, callback
-		item.images.local.push(imagePath + filename);
+		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
+		item.images.local.push(itemImagePath + filename);
 	});
-
-	return item;
 }
 
 function getCompletedItemLink(data){
@@ -107,7 +109,7 @@ function getCompletedItemUrl(urlstr){
 }
 
 function makeLargerImageUrl(url){
-	return url.replace(/(?!s\-l)64/, "600");
+	return url.replace(/(?!s\-l)64/, "400");
 }
 
 
@@ -116,13 +118,16 @@ function makeLocalImagePath(dataStr, filename){
 }
 
 function getFileName(id, suffix){
-	return   id + "-t." + suffix;
+	return   "t." + suffix;
 }
 
 function addDirectory(path){
 	if (!fs.existsSync(path)) {
 		fs.mkdirSync(path);
+		//console.info("making directory " + path);
 	}
+
+	return path + "/";
 }
 
 module.exports = {fetchImages: fetchImages, fetchAdditionalImages: fetchAdditionalImages};

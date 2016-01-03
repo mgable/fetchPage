@@ -36,10 +36,8 @@
 		newest = diff(today, yesterday);
 
 		fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
-		// SHOULD BE THEN
 
-		fetch.fetchAdditionalImages(newest, imagePath);
-		// SHOULD BE THEN
+		fetch.fetchAdditionalImages(newest, imagePath, !program.noimages);
 
 	console.info("There are " + newest.length + " new items added for " + dateStr);
 
