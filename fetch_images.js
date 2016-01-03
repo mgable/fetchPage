@@ -7,7 +7,7 @@ var fs = require('fs'),
 	_ = require('underscore'),
 	index = 0;
 
-var download = function(uri, imagePath, filename, callback){
+function download (uri, imagePath, filename, callback){
 	request.head(uri, function(err, res, body){
 		// console.log('content-type:', res.headers['content-type']);
 		// console.log('content-length:', res.headers['content-length']);
