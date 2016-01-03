@@ -32,7 +32,7 @@
 
 	program
 		.version('0.0.1')
-		.option('-t, --test', 'testing')
+		.option('-t, --test', 'testing'),
 		.parse(process.argv);
 
 	// the meat of the matter
@@ -68,7 +68,7 @@
 		req.write('data\n');
 		req.end();
 
-		return deferred.promise
+		return deferred.promise;
 	}
 
 	function save(data){

@@ -2,35 +2,44 @@
 
 var fs = require('fs'),
 	request = require('request'),
+	Q = require("q"),
 	fetchUtil = require('./util.js'),
 	config = require('./config.js'),
 	cheerio = require('cheerio'),
 	url = require('url'),
 	util = require('./util.js'),
 	_ = require('underscore'),
+	downloadImages = true,
 	index = 0;
 
 function download(uri, imagePath, filename, callback){
 	var callback = callback || _.noop;
-	request.head(uri, function(err, res, body){
-		// console.log('content-type:', res.headers['content-type']);
-		// console.log('content-length:', res.headers['content-length']);
+	if (downloadImages){
+		request.head(uri, function(err, res, body){
+			// console.log('content-type:', res.headers['content-type']);
+			// console.log('content-length:', res.headers['content-length']);
 
-		request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback);
-	});
+			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback);
+		});
+		console.info("DOWNLOADING IMAGE " + uri);
+	} else {
+		console.info("NOT - " + uri);
+		callback();
+	}
 };
 
-function fetchImages(dataStr, imagePath, items, downloadImages, callback){
+function setDownloadFlag(flag){
+	console.info("setting download images to " + flag);
+	downloadImages = flag;
+}
+
+function fetchImages(dateStr, imagePath, items){
 	var dateRE = /\w{3,4}$/,
-		callback = callback || _.noop;
+		deferred = Q.defer();
 
-		addDirectory(imagePath);
+	addDirectory(imagePath);
 
-	if (!downloadImages) {
-		console.info("not downloading images");
-	};
-
-	items.forEach(function(item,index){
+	items.forEach(function(item, index){
 		var src = {};
 		src.original = item.src;
 
@@ -38,37 +47,39 @@ function fetchImages(dataStr, imagePath, items, downloadImages, callback){
 			filename = getFileName(item.id, suffix),
 			itemImagePath = addDirectory(imagePath + item.id);
 
-			console.info(itemImagePath);
-
-			console.info(filename);
-
-		src.local =  makeLocalImagePath(dataStr, filename);
+		src.local =  makeLocalImagePath(dateStr, item.id, filename);
 		item.src = src;
 
-		if (downloadImages){	
-			download(src.original, itemImagePath, filename, function(){
-				callback();
-			});
-		}
+		download(src.original, itemImagePath, filename, function(){
+			return deferred.resolve(items);
+		});
 
 	});
 
-	return items;
+	return deferred.promise;
 }
 
-function fetchAdditionalImages(items, imagePath, downloadImages){
+function fetchAdditionalImages(dateStr, imagePath, items){
+	var results = items.map(function(item,index){
+		var deferred = Q.defer();
 
-	items.forEach(function(item,index){
 		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function(data){
 			return getCompletedItemLink(data);
 		}).then(function (data){
 			util.fetchPage(util.makeOptions(data)).then(function(data){
 				var additionalImages = collectAdditionalImages(data);
-				downloadAdditionalImages(item, additionalImages, imagePath);
+
+				return downloadAdditionalImages(item, additionalImages, imagePath, dateStr);
+			}).then(function(data){
+				console.info("done!");
+				return deferred.resolve(data);
 			});
 		});
+
+		return deferred.promise;
 	});
 
+	return results;
 }
 
 function collectAdditionalImages(data){
@@ -82,7 +93,7 @@ function collectAdditionalImages(data){
 	return results;
 }
 
-function downloadAdditionalImages(item, additionalImages, imagePath){
+function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
 	item.images = {};
 	item.images.original = additionalImages;
 	item.images.local = [];
@@ -90,12 +101,14 @@ function downloadAdditionalImages(item, additionalImages, imagePath){
 	additionalImages.forEach(function(v,index){
 		var filename = "i_" + index + ".jpg",
 			largerImageUrl = makeLargerImageUrl(v),
-			itemImagePath = imagePath + "/" + item.id + "/";
+			itemImagePath = imagePath + item.id + "/";
 		
 		console.info("downloading  - " + largerImageUrl);
 		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
-		item.images.local.push(itemImagePath + filename);
+		item.images.local.push(makeLocalImagePath(dateStr, item.id, filename));
 	});
+
+	return item;
 }
 
 function getCompletedItemLink(data){
@@ -113,8 +126,8 @@ function makeLargerImageUrl(url){
 }
 
 
-function makeLocalImagePath(dataStr, filename){
-	return dataStr + "/" + filename
+function makeLocalImagePath(dataStr, id, filename){
+	return dataStr + "/" + id + "/" + filename
 }
 
 function getFileName(id, suffix){
@@ -130,4 +143,11 @@ function addDirectory(path){
 	return path + "/";
 }
 
-module.exports = {fetchImages: fetchImages, fetchAdditionalImages: fetchAdditionalImages};
+module.exports = {
+	fetchImages: fetchImages, 
+	fetchAdditionalImages: fetchAdditionalImages,
+	setDownloadFlag: setDownloadFlag
+};
+
+
+

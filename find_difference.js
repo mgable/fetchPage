@@ -6,6 +6,7 @@
 		_ = require("underscore"),
 		config = require('./config.js'),
 		util = require('./util.js'),
+		Q = require("q"),
 		fetch = require('./fetch_images.js'),
 		program = require('commander');
 
@@ -14,6 +15,8 @@
 		.option('-i, --noimages', 'no images')
 		.option('-t, --test', 'testing')
 		.parse(process.argv);
+
+	fetch.setDownloadFlag(!program.noimages);
 
 	var	category = config.category.name,
 		fileOverwrite = program.args[0], // an optional date string e.g. '20151213' to retrieve historical data
@@ -31,23 +34,21 @@
 		// get existing information
 		storeFile =  storeFilePath + category + ".json",
 		store = util.getFileContents(storeFile) || [],
-		
+
 		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
-		fetch.fetchImages(dateStr, imagePath, newest, !program.noimages);
+		// the meat of the matter
+		fetch.fetchImages(dateStr, imagePath, newest).then(function(data){
+			return fetch.fetchAdditionalImages(dateStr, imagePath, data);
+		}).then(function(data){
+			Q.all(data).then(function(data){
+				console.info("TOTALLY DONE!!!");
+				save(storeFile, data);
+			});
+		});
 
-		fetch.fetchAdditionalImages(newest, imagePath, !program.noimages);
-
-	console.info("There are " + newest.length + " new items added for " + dateStr);
-
-	// THIS SHOULD BE IN THE THEN STATEMENT
-	if(!program.test){
-		console.info("saving");
-		save(storeFile, newest);
-	} else {
-		console.info("Just a test - nothing saved");
-	}
+		//
 
 	function getYesterdayFileName(filename){
 		if (!filename) {
@@ -81,14 +82,19 @@
 			results.push(current);
 		}
 
+		console.info("There are " + results.length + " new items added for " + dateStr);
 		return results;
 	}
 
 	function save(filename, data){
 		var newData = store.concat(data);
 
-		fs.writeFileSync(filename, JSON.stringify(newData));
-		console.info("the total number of items is " + newData.length);
-		console.info("wrote file " + filename);
+		if(!program.test){
+			fs.writeFileSync(filename, JSON.stringify(newData));
+			console.info("the total number of items is " + newData.length);
+			console.info("wrote file " + filename);
+		} else {
+			console.info("Just a test - nothing saved");
+		}
 	}
 })()
