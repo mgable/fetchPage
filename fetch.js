@@ -12,7 +12,7 @@
 		category = config.category.name,
 		rawData = [];
 
-		console.info(util.getPageTemplate(config.category.id));
+	util.logger.log(util.getPageTemplate(config.category.id));
 
 	require('datejs');
 
@@ -75,7 +75,7 @@
 		var filename = makeDirectories(category) +  util.getFileName(category, "json");
 		if (!program.test){
 			fs.writeFileSync(filename, data);
-			console.info("wrote file " + filename);
+			util.logger.log("wrote file " + filename);
 		} else {
 			console.info(data);
 			console.info("************* Just Testing ****************");
@@ -108,7 +108,6 @@
 		var $ = cheerio.load(data);
 		return JSON.stringify($("a").map(function(a,b){return myMap(b)}).get());
 	}
-
 
 	function myMap(data){
 		var obj = {};

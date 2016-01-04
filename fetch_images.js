@@ -14,16 +14,17 @@ var fs = require('fs'),
 
 function download(uri, imagePath, filename, callback){
 	var callback = callback || _.noop;
+
 	if (downloadImages){
 		request.head(uri, function(err, res, body){
 			// console.log('content-type:', res.headers['content-type']);
 			// console.log('content-length:', res.headers['content-length']);
 
-			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback);
+			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback).on('error', function(err){
+				util.logger.log(err, 'error');
+			});
 		});
-		//console.info("DOWNLOADING IMAGE " + uri);
 	} else {
-		//console.info("NOT - " + uri);
 		callback();
 	}
 };
@@ -63,14 +64,13 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 	var results = items.map(function(item,index){
 		var deferred = Q.defer();
 
-		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function(data){
-			return getCompletedItemLink(data);
+		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function (data){
+			return getCompletedItemLink(data, index, item.link);
 		}).then(function (data){
-			util.fetchPage(util.makeOptions(data)).then(function(data){
+			util.fetchPage(util.makeOptions(data)).then(function (data){
 				var additionalImages = collectAdditionalImages(data);
 				return downloadAdditionalImages(item, additionalImages, imagePath, dateStr);
-			}).then(function(data){
-				console.info("DONE!!!!!");
+			}).then(function (data){
 				return deferred.resolve(data);
 			});
 		});
@@ -80,6 +80,8 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 
 	return results;
 }
+
+ var index = 0;
 
 function collectAdditionalImages(data){
 	var $ = cheerio.load(data),
@@ -106,7 +108,6 @@ function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
 			largerImageUrl = makeLargerImageUrl(v),
 			itemImagePath = imagePath + item.id + "/";
 		
-		// console.info("downloading  - " + largerImageUrl);
 		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
 		item.images.local.push(makeLocalImagePath(dateStr, item.id, filename));
 	});
@@ -114,9 +115,13 @@ function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
 	return item;
 }
 
-function getCompletedItemLink(data){
-	var $ = cheerio.load(data);
-	return $(".vi-inl-lnk.vi-cvip-prel3 a")[0].attribs.href;
+function getCompletedItemLink(data, index, link){
+	try{
+		var $ = cheerio.load(data);
+		return $("a:contains('See original listing')")[0].attribs.href;
+	}catch(e){
+		util.logger.log(link, 'error');
+	}
 }
 
 function getCompletedItemUrl(urlstr){

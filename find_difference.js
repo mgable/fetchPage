@@ -43,9 +43,8 @@
 		return fetch.fetchAdditionalImages(dateStr, imagePath, data);
 	}).then(function(data){
 		console.info("done receiving data");
-		console.info(data);
 		Q.all(data).then(function(data){
-			console.info("totally done");
+			console.info("TOTALLY DONE!!!!");
 			save(storeFile, data);
 		});
 	});
@@ -82,19 +81,20 @@
 			results.push(current);
 		}
 
-		console.info("There are " + results.length + " new items added for " + dateStr);
+		util.logger.log("There are " + results.length + " new items added for " + dateStr);
 		return results;
 	}
 
 	function save(filename, data){
+		console.info("saving data");
 		var newData = store.concat(data);
 
 		if(!program.test){
-			fs.writeFileSync(filename, JSON.stringify(newData));
-			console.info("the total number of items is " + newData.length);
-			console.info("wrote file " + filename);
+			//fs.writeFileSync(filename, JSON.stringify(newData));
+			util.logger.log("the total number of items is " + newData.length);
+			util.logger.log("wrote file " + filename);
 		} else {
-			console.info("Just a test - nothing saved");
+			util.logger.log("Just a test - nothing saved");
 		}
 	}
 })()

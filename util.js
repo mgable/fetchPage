@@ -6,6 +6,7 @@
 		Q = require("q"),
 		http = require("http"),
 		url = require('url'),
+		logger = require('./logging.js'),
 		today = new Date(), util = {};
 
 	function getDateString(d){
@@ -65,7 +66,7 @@
 
 	function fetchPage(options){
 		var deferred = Q.defer(),
-			container = [],
+			container = "",
 			req = http.request(options, function(res) {
 
 				res.setEncoding('utf8');
@@ -77,10 +78,14 @@
 				res.on('end', function(){
 					return deferred.resolve(container)
 				});
+
+				res.on('error', function(err){
+					util.logger.log(err, 'error');
+				});
 			});
 
-		req.on('error', function(e) {
-			console.error('problem with request: ' + e.message);
+		req.on('error', function(err) {
+			util.logger.log(err, 'error');
 			deferred.reject;
 		});
 
@@ -98,7 +103,8 @@
 			host: urlObj.host,
 			port: 80,
 			path: urlObj.path,
-			method: 'GET'
+			method: 'GET',
+			agent: false
 		};
 
 		return options;
@@ -116,6 +122,7 @@
 	util.generateUID = generateUID;
 	util.fetchPage = fetchPage;
 	util.makeOptions = makeOptions;
+	util.logger = logger;
 
 	module.exports = util;
 })()
