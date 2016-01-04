@@ -9,8 +9,7 @@ var fs = require('fs'),
 	url = require('url'),
 	util = require('./util.js'),
 	_ = require('underscore'),
-	downloadImages = true,
-	index = 0;
+	downloadImages = true;
 
 function download(uri, imagePath, filename, callback){
 	var callback = callback || _.noop;
@@ -65,7 +64,7 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 		var deferred = Q.defer();
 
 		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function (data){
-			return getCompletedItemLink(data, index, item.link);
+			return getCompletedItemLink(data, item.link);
 		}).then(function (data){
 			util.fetchPage(util.makeOptions(data)).then(function (data){
 				var additionalImages = collectAdditionalImages(data);
@@ -80,8 +79,6 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 
 	return results;
 }
-
- var index = 0;
 
 function collectAdditionalImages(data){
 	var $ = cheerio.load(data),
@@ -115,7 +112,7 @@ function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
 	return item;
 }
 
-function getCompletedItemLink(data, index, link){
+function getCompletedItemLink(data, link){
 	try{
 		var $ = cheerio.load(data);
 		return $("a:contains('See original listing')")[0].attribs.href;
