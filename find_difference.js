@@ -38,17 +38,17 @@
 		// the diff for today versus yesterday expressed in items
 		newest = diff(today, yesterday);
 
-		// the meat of the matter
-		fetch.fetchImages(dateStr, imagePath, newest).then(function(data){
-			return fetch.fetchAdditionalImages(dateStr, imagePath, data);
-		}).then(function(data){
-			Q.all(data).then(function(data){
-				console.info("TOTALLY DONE!!!");
-				save(storeFile, data);
-			});
+	// the meat of the matter
+	fetch.fetchImages(dateStr, imagePath, newest).then(function(data){
+		return fetch.fetchAdditionalImages(dateStr, imagePath, data);
+	}).then(function(data){
+		console.info("done receiving data");
+		console.info(data);
+		Q.all(data).then(function(data){
+			console.info("totally done");
+			save(storeFile, data);
 		});
-
-		//
+	});
 
 	function getYesterdayFileName(filename){
 		if (!filename) {

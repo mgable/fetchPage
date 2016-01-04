@@ -21,9 +21,9 @@ function download(uri, imagePath, filename, callback){
 
 			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback);
 		});
-		console.info("DOWNLOADING IMAGE " + uri);
+		//console.info("DOWNLOADING IMAGE " + uri);
 	} else {
-		console.info("NOT - " + uri);
+		//console.info("NOT - " + uri);
 		callback();
 	}
 };
@@ -68,10 +68,9 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 		}).then(function (data){
 			util.fetchPage(util.makeOptions(data)).then(function(data){
 				var additionalImages = collectAdditionalImages(data);
-
 				return downloadAdditionalImages(item, additionalImages, imagePath, dateStr);
 			}).then(function(data){
-				console.info("done!");
+				console.info("DONE!!!!!");
 				return deferred.resolve(data);
 			});
 		});
@@ -90,6 +89,10 @@ function collectAdditionalImages(data){
 		results.push(v.attribs.src);
 	});
 
+	if (!results.length){
+		results.push($('#icImg').attr("src"));
+	}
+
 	return results;
 }
 
@@ -103,7 +106,7 @@ function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
 			largerImageUrl = makeLargerImageUrl(v),
 			itemImagePath = imagePath + item.id + "/";
 		
-		console.info("downloading  - " + largerImageUrl);
+		// console.info("downloading  - " + largerImageUrl);
 		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
 		item.images.local.push(makeLocalImagePath(dateStr, item.id, filename));
 	});
@@ -137,7 +140,6 @@ function getFileName(id, suffix){
 function addDirectory(path){
 	if (!fs.existsSync(path)) {
 		fs.mkdirSync(path);
-		//console.info("making directory " + path);
 	}
 
 	return path + "/";
