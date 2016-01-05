@@ -32,7 +32,7 @@
 
 	program
 		.version('0.0.1')
-		.option('-t, --test', 'testing'),
+		.option('-t, --test', 'testing')
 		.parse(process.argv);
 
 	// the meat of the matter

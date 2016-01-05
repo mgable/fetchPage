@@ -90,7 +90,7 @@
 		var newData = store.concat(data);
 
 		if(!program.test){
-			//fs.writeFileSync(filename, JSON.stringify(newData));
+			fs.writeFileSync(filename, JSON.stringify(newData));
 			util.logger.log("the total number of items is " + newData.length);
 			util.logger.log("wrote file " + filename);
 		} else {
