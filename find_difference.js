@@ -3,6 +3,7 @@
 	require('datejs');
 
 	var fs  = require("fs"),
+		nodefs = require("node-fs"),
 		_ = require("underscore"),
 		config = require('./config.js'),
 		util = require('./util.js'),
@@ -19,13 +20,14 @@
 	fetch.setDownloadFlag(!program.noimages);
 
 	var	category = config.category.name,
-		fileOverwrite = program.args[0], // an optional date string e.g. '20151213' to retrieve historical data
+		fileOverwrite = program.args[0] || util.getDateString(), // an optional date string e.g. '20151213' to retrieve historical data
 		dateStr = fileOverwrite || util.getDateString(), // official date label use for file names and paths
 
 		// make all paths
 		rawDataPath = util.getRawDataPath(category, fileOverwrite), // path to raw data (today or historical)
-		storeFilePath = util.getStoreFilePath(category), //config.dataRoot + 'store/' + category,
-		imagePath = util.getImagePath(category, (fileOverwrite || util.getDateString())), //storeFilePath + "/images/" +  (fileOverwrite || util.getDateString()),
+		storeFilePath = util.getStoreFilePath(category), //config.dataRoot + category + 'store/' ,
+		imagePath = util.getImagePath(category, fileOverwrite), //storeFilePath + "images/" +  dateStr,
+		diffPath = util.getDiffPath(category, fileOverwrite), //config.dataRoot + category + '/diff/' + dateStr ,
 
 		// get data for today and yesterday
 		today = util.getFileContents(rawDataPath + util.getFileName(category, "json", fileOverwrite)), //name, suffix, fileOverwrite
@@ -90,11 +92,23 @@
 		var newData = store.concat(data);
 
 		if(!program.test){
-			fs.writeFileSync(filename, JSON.stringify(newData));
+			saveDiff(data)
+			//fs.writeFileSync(filename, JSON.stringify(newData));
 			util.logger.log("the total number of items is " + newData.length);
 			util.logger.log("wrote file " + filename);
 		} else {
 			util.logger.log("Just a test - nothing saved");
 		}
+	}
+
+	function makeFileName(path, category){
+		return path + category + ".json"
+	}
+
+	function saveDiff(data){
+		var filename = makeFileName(diffPath, category);
+		nodefs.mkdirSync(diffPath, "41777", true);
+		fs.writeFileSync(filename, JSON.stringify(data));
+		util.logger.log("saving diff file " + filename);
 	}
 })()

@@ -26,8 +26,18 @@
 		return config.dataRoot + name + "/raw/"  + (fileOverwrite || getDateString()) + "/";
 	}
 
+	function getDiffPath(name, dateStr){
+		return config.dataRoot + name + "/diffs/" + makePathFromDateString(dateStr) + "/";
+	}
+
 	function getPageTemplate(id){
 		return config.pageUrlTemplate.replace(/( \*{3}) config\.category\.id (\*{3} )/, id);
+	}
+
+	function makePathFromDateString(dateStr){
+		var date = dateStr.match(/(\d{4})(\d{2})(\d{2})/);
+		date.shift();
+		return date.join("/");
 	}
 
 	function getFileContents(filename){
@@ -114,6 +124,7 @@
 	util.getFileName = getFileName;
 	util.getRawDataPath = getRawDataPath;
 	util.getFileContents = getFileContents;
+	util.getDiffPath = getDiffPath;
 	util.fileExists = fileExists;
 	util.getStoreFilePath = getStoreFilePath;
 	util.getImagePath = getImagePath;
