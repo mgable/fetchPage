@@ -93,3 +93,54 @@
 {"level":"info","message":"There are 70 new items added for 20160108","timestamp":"2016-01-08T16:29:45.493Z"}
 {"level":"info","message":"the total number of items is 2325","timestamp":"2016-01-08T16:29:49.786Z"}
 {"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-08T16:29:49.787Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:30:33.567Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:31:54.441Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:32:36.939Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:32:52.820Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:33:18.863Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:33:34.777Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:34:27.864Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:37:40.173Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:39:57.054Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:39:57.595Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:41:35.711Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:41:36.427Z"}
+{"level":"error","message":"Error uploading data /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json: InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.","timestamp":"2016-01-08T21:41:37.356Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:44:04.434Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:44:05.022Z"}
+{"level":"error","message":"Error uploading data advertising_tins/raw/advertising_tins_20160108.json: InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.","timestamp":"2016-01-08T21:44:05.870Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:46:24.358Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:46:24.946Z"}
+{"level":"error","message":"Error uploading data advertising_tins/raw/advertising_tins_20160108.json: InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.","timestamp":"2016-01-08T21:46:25.791Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:56:57.548Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:56:58.294Z"}
+{"level":"error","message":"Error uploading data advertising_tins/raw/advertising_tins_20160108.json: InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.","timestamp":"2016-01-08T21:56:59.091Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:57:49.917Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:57:50.576Z"}
+{"level":"error","message":"Error uploading data advertising_tins/raw/advertising_tins_20160108.json: InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.","timestamp":"2016-01-08T21:57:50.820Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T21:58:47.586Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T21:58:48.142Z"}
+{"level":"error","message":"Error uploading data advertising_tins/raw/advertising_tins_20160108.json: InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records.","timestamp":"2016-01-08T21:58:49.002Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:00:47.383Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:00:47.968Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/raw/advertising_tins_20160108.json","timestamp":"2016-01-08T22:00:48.968Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:09:30.032Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:09:30.788Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:10:41.646Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:10:42.337Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:10:42.685Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:12:27.773Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:12:28.368Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:12:28.719Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:13:44.520Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:13:45.219Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:13:46.134Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:14:17.331Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:14:17.879Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:14:18.721Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:32:08.118Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T22:32:08.801Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:32:09.175Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:56:54.764Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:56:55.446Z"}
+{"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:56:56.304Z"}

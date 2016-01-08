@@ -21,7 +21,16 @@ AWS.config.credentials = credentials;
 var s3bucket = new AWS.S3({ params: {Bucket: 'mgable', region: "Northern California"} });
 
 fetchPage(options).then(function(data){
-	console.info(data);
+	console.info("we have data");
+	var params = {Key: 'test/myKey', Body: data};
+
+	s3bucket.upload(params, function(err, data) {
+		if (err) {
+		  console.log("Error uploading data: ", err);
+		} else {
+		  console.log("Successfully uploaded data to myBucket/myKey");
+		}
+	});
 });
 
 console.info("hello world");
@@ -54,10 +63,6 @@ function fetchPage(options){
 	return deferred.promise;
 }
 
-
-
-
-
 // s3bucket.getObject({Bucket: 'mgable', Key: 'index.html'}).on('success', function(response) {
 //   console.log("Key was", response.data.Body.toString());
 // }).on('error', function(response){
@@ -79,14 +84,4 @@ function fetchPage(options){
 //   } else {
 //     console.log(data); // data is Response.data
 //   }
-// });
-
-// var params = {Key: 'test/myKey', Body: 'Hello!'};
-
-// s3bucket.upload(params, function(err, data) {
-// if (err) {
-//   console.log("Error uploading data: ", err);
-// } else {
-//   console.log("Successfully uploaded data to myBucket/myKey");
-// }
 // });

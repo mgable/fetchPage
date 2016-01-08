@@ -3,6 +3,7 @@
 (function() {
 	var config = require('./config.js'),
 		fs  = require("fs"),
+		nodefs = require("node-fs"),
 		Q = require("q"),
 		http = require("http"),
 		url = require('url'),
@@ -23,7 +24,7 @@
 	}
 
 	function getRawDataPath(name, fileOverwrite){
-		return config.dataRoot + name + "/raw/"  + (fileOverwrite || getDateString()) + "/";
+		return config.dataRoot + name + "/raw/"  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
 	}
 
 	function getDiffPath(name, dateStr){
@@ -32,6 +33,10 @@
 
 	function getPageTemplate(id){
 		return config.pageUrlTemplate.replace(/( \*{3}) config\.category\.id (\*{3} )/, id);
+	}
+
+	function getRawS3Path(name, fileOverwrite){
+		return name + "/" + makePathFromDateString((fileOverwrite || getDateString())) + "/";
 	}
 
 	function makePathFromDateString(dateStr){
@@ -120,6 +125,11 @@
 		return options;
 	}
 
+	function makeDirectories(path){
+		nodefs.mkdirSync(path, "41777", true);
+	}
+
+	util.makeDirectories = makeDirectories;
 	util.getDateString = getDateString;
 	util.getFileName = getFileName;
 	util.getRawDataPath = getRawDataPath;
@@ -132,7 +142,8 @@
 	util.getPageTemplate = getPageTemplate;
 	util.generateUID = generateUID;
 	util.fetchPage = fetchPage;
-	util.makeOptions = makeOptions;
+	util.makeOptions = makeOptions,
+	util.getRawS3Path = getRawS3Path;
 	util.logger = logger;
 
 	module.exports = util;

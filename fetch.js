@@ -3,6 +3,7 @@
 (function(){
 	var http = require('http'),
 		fs = require('fs'),
+		AWS = require('aws-sdk'),
 		cheerio = require('cheerio'),
 		util = require('./util.js'),
 		config = require('./config.js'),
@@ -36,50 +37,46 @@
 		.parse(process.argv);
 
 	// the meat of the matter
-	fetchPage(options).then(function(data){_process(data)});
+	util.fetchPage(options).then(function(data){_process(data)});
 
 	function _process(data){
 		var document = parse(data);
 		save (document);
 	}
 
-	function fetchPage(options){
-		var deferred = Q.defer(),
-			container = [],
-			req = http.request(options, function(res) {
-
-				res.setEncoding('utf8');
-
-				res.on('data', function (chunk) {
-					container += chunk;
-				});
-
-				res.on('end', function(){
-					return deferred.resolve(container)
-				});
-			});
-
-		req.on('error', function(e) {
-			console.error('problem with request: ' + e.message);
-			deferred.reject;
-		});
-
-		// write data to request body
-		req.write('data\n');
-		req.end();
-
-		return deferred.promise;
-	}
-
 	function save(data){
-		var filename = makeDirectories(category) +  util.getFileName(category, "json");
+		var path = util.getRawDataPath(category),
+			file = util.getFileName(category, "json"),
+			filename = path + file;
 		if (!program.test){
-			fs.writeFileSync(filename, data);
-			util.logger.log("wrote file " + filename);
+			saveLocal(path, filename, data)
+			saveToS3(file, data);
 		} else {
 			console.info(data);
 			console.info("************* Just Testing ****************");
 		}
+	}
+
+	function saveLocal(path, filename, data){
+		util.makeDirectories(path); 
+		fs.writeFileSync(filename, data);
+		util.logger.log("wrote file " + filename);
+	}
+
+	function saveToS3(file, data){
+		var credentials = new AWS.SharedIniFileCredentials({profile: 'mgable'});
+		AWS.config.credentials = credentials;
+
+		var s3bucket = new AWS.S3({ params: {Bucket: 'collectors-db', region: "Northern California"} }),
+			filename = util.getRawS3Path(category) + file;
+		
+		s3bucket.upload({"Key": filename, "Body": data, "ContentType": "application/json; charset=UTF-8"}, function(err, data) {
+			if (err) {
+				util.logger.log("Error uploading data " + filename + ": " + err, 'error');
+			} else {
+				util.logger.log("Successfully uploaded data to: " + filename);
+			}
+		});
 	}
 
 	function makeOptions(urlstr){
@@ -95,14 +92,15 @@
 		return options;
 	}
 
-	function makeDirectories(name){
-		var path = util.getRawDataPath(name);
-		if(! fs.existsSync(path)) {
-			fs.mkdirSync(path);
-		}
+	// function makeDirectories(path){
+	// 	console.info("making path " + path);
 
-		return path;
-	}
+	// 	if(! fs.existsSync(path)) {
+	// 		fs.mkdirSync(path);
+	// 	}
+
+	// 	return path;
+	// }
 
 	function parse(data){
 		var $ = cheerio.load(data);
