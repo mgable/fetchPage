@@ -84,3 +84,12 @@
 {"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/07/advertising_tins.json","timestamp":"2016-01-07T21:50:50.063Z"}
 {"level":"info","message":"the total number of items is 2311","timestamp":"2016-01-07T21:50:50.064Z"}
 {"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-07T21:50:50.064Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T16:21:38.946Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/20160108/advertising_tins_20160108.json","timestamp":"2016-01-08T16:21:39.545Z"}
+{"level":"info","message":"There are 70 new items added for 20160108","timestamp":"2016-01-08T16:24:31.379Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/08/advertising_tins.json","timestamp":"2016-01-08T16:24:36.473Z"}
+{"level":"info","message":"the total number of items is 2325","timestamp":"2016-01-08T16:24:36.474Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-08T16:24:36.475Z"}
+{"level":"info","message":"There are 70 new items added for 20160108","timestamp":"2016-01-08T16:29:45.493Z"}
+{"level":"info","message":"the total number of items is 2325","timestamp":"2016-01-08T16:29:49.786Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-08T16:29:49.787Z"}
