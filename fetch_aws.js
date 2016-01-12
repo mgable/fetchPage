@@ -6,6 +6,7 @@ var AWS = require('aws-sdk'),
 	cheerio = require('cheerio'),
 	util = require('./util.js'),
 	config = require('./config.js'),
+	program = require('commander'),
 	Q = require("q");
 
 var options = {
@@ -15,23 +16,48 @@ var options = {
 	method: 'POST'
 };
 
-var credentials = new AWS.SharedIniFileCredentials({profile: 'mgable'});
-AWS.config.credentials = credentials;
+program
+	.version('0.0.1')
+	.option('-t, --test', 'testing')
+	.parse(process.argv);
 
-var s3bucket = new AWS.S3({ params: {Bucket: 'mgable', region: "Northern California"} });
+// the meat of the matter
+util.fetchPage(options).then(function(data){_process(data)});
 
-util.fetchPage(options).then(function(data){
-	console.info("we have data");
-	var params = {Key: 'test/myKey', Body: data};
+function _process(data){
+	var document = parse(data);
+	save (document);
+}
 
-	s3bucket.upload(params, function(err, data) {
+function save(data){
+	var path = util.getRawDataPath(category),
+		file = util.getFileName(category, "json"),
+		filename = path + file;
+	if (!program.test){
+		//saveLocal(path, filename, data)
+		saveToS3(file, data);
+	} else {
+		console.info("saving file " + filename);
+		console.info("************* Just Testing ****************");
+	}
+}
+
+function saveToS3(file, data){
+	var credentials = new AWS.SharedIniFileCredentials({profile: 'mgable'});
+	AWS.config.credentials = credentials;
+
+	var s3bucket = new AWS.S3({ params: {Bucket: 'collectors-db', region: "Northern California"} }),
+		filename = util.getRawS3Path(category) + file;
+	
+	s3bucket.upload({"Key": filename, "Body": data, "ContentType": "application/json; charset=UTF-8"}, function(err, data) {
 		if (err) {
-		  console.log("Error uploading data: ", err);
+			util.logger.log("Error uploading data " + filename + ": " + err, 'error');
 		} else {
-		  console.log("Successfully uploaded data to myBucket/myKey");
+			util.logger.log("Successfully uploaded data to: " + filename);
 		}
 	});
-});
+}
+
 
 
 

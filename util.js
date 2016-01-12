@@ -8,7 +8,10 @@
 		http = require("http"),
 		url = require('url'),
 		logger = require('./logging.js'),
-		today = new Date(), util = {};
+		today = new Date(), 
+		diffDirectory = "/diffs/",
+		rawDirectory = "/raw/",
+		util = {};
 
 	function getDateString(d){
 		var date = d || today;
@@ -24,11 +27,11 @@
 	}
 
 	function getRawDataPath(name, fileOverwrite){
-		return config.dataRoot + name + "/raw/"  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
+		return config.dataRoot + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
 	}
 
 	function getDiffPath(name, dateStr){
-		return config.dataRoot + name + "/diffs/" + makePathFromDateString(dateStr) + "/";
+		return config.dataRoot + name + diffDirectory + makePathFromDateString(dateStr) + "/";
 	}
 
 	function getPageTemplate(id){
@@ -36,7 +39,7 @@
 	}
 
 	function getRawS3Path(name, fileOverwrite){
-		return name + "/diff/" + makePathFromDateString((fileOverwrite || getDateString())) + "/";
+		return name + rawDirectory + makePathFromDateString((fileOverwrite || getDateString())) + "/";
 	}
 
 	function makePathFromDateString(dateStr){
