@@ -57,10 +57,10 @@
 			return util.getRawDataPath(category, yesterday) +  util.getFileName(category, "json", yesterday);
 		} else {
 
-			var dateArray = filename.match(/(\d{4})(\d{2})(\d{2})/).splice(1).map(function(v){return parseInt(v,10)});
+			var dateArray = filename.match(/(\d{4})(\d{2})(\d{2})/).splice(1).map(function(v){return parseInt(v,10);});
 			dateArray.unshift(null);
 
-			var	uncorrectedDate = new (Function.prototype.bind.apply(Date, dateArray)),
+			var	uncorrectedDate = new (Function.prototype.bind.apply(Date, dateArray)), // jshint ignore:line
 				correctedDate = uncorrectedDate.last().month().add(-1).days(),
 				dateStr = util.getDateString(correctedDate);
 
@@ -101,7 +101,7 @@
 	}
 
 	function makeFileName(path, category){
-		return path + category + ".json"
+		return path + category + ".json";
 	}
 
 	function saveIndex(filename, data){
@@ -116,4 +116,4 @@
 		fs.writeFileSync(filename, JSON.stringify(data));
 		util.logger.log("saving diff file " + filename);
 	}
-})()
+})();

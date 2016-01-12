@@ -14,4 +14,4 @@ module.exports = {
 	dataRoot: dataRoot,
 	domain: domain,
 	pageUrlTemplate: pageUrlTemplate
-}
+};

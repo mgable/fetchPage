@@ -1,8 +1,8 @@
 "use strict";
 
 (function(){
-	var fs = require('fs'),
-		AWS = require('aws-sdk'),
+	var AWS = require('aws-sdk'),
+		fs = require('fs'),
 		util = require('./util.js'),
 		config = require('./config.js'),
 		program = require('commander'),
@@ -10,8 +10,6 @@
 		category = config.category.name;
 
 	util.logger.log("fetching: " + util.getPageTemplate(config.category.id));
-
-	require('datejs');
 
 	var options = {
 		host: config.domain,
@@ -26,7 +24,7 @@
 		.parse(process.argv);
 
 	// the meat of the matter
-	util.fetchPage(options).then(function(data){_process(data)});
+	util.fetchPage(options).then(function(data){_process(data);});
 
 	function _process(data){
 		var document = parser.parse(data);
@@ -38,7 +36,6 @@
 
 		saveLocal(file, data);
 		saveToS3(file, data);
-
 	}
 
 	function saveLocal(file, data){
@@ -63,7 +60,7 @@
 			filename = util.getRawS3Path(category) + file;
 		
 		if (!program.test){
-			s3bucket.upload({"Key": filename, "Body": data, "ContentType": "application/json; charset=UTF-8"}, function(err, data) {
+			s3bucket.upload({"Key": filename, "Body": data, "ContentType": "application/json; charset=UTF-8"}, function(err, data) { // jshint ignore:line
 				if (err) {
 					util.logger.log("ERROR - S3: " + filename + ": " + err, 'error');
 				} else {
@@ -75,5 +72,4 @@
 			console.info("************* S3: Just Testing - nothing saved!! ****************");
 		}
 	}
-})()
-
+})();

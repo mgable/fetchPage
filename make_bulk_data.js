@@ -14,10 +14,10 @@
 		var results = '';
 
 		if (typeof line === "object"){
-			line.forEach(function(v,i,a){
-				var str = JSON.stringify({"index":{"_id": (i+1)}});
-				results += str + "\n" + JSON.stringify(v) + "\n";
-			})
+			line.forEach(function(value, index){
+				var str = JSON.stringify({"index":{"_id": (index + 1)}});
+				results += str + "\n" + JSON.stringify(value) + "\n";
+			});
 
 			return results;
 		}
@@ -26,8 +26,8 @@
 	}
 
 	function save(filename, category, data){
-		var path = util.getIndexPathAndFile(category)
+		var path = util.getIndexPathAndFile(category);
 		fs.writeFileSync(path, data);
 		util.logger.log("saving bulk import file: " + path);
 	}
-})()
+})();

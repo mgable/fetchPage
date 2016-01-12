@@ -49,7 +49,7 @@
 	}
 
 	function getFileContents(filename){
-		if (!filename) return false;
+		if (!filename) {return false;}
 			
 		if (fileExists(filename)){
 			return JSON.parse(fs.readFileSync(filename).toString());
@@ -59,7 +59,7 @@
 	}
 
 	function generateUID() {
-		return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4);
+		return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4); // jshint ignore:line
 	}
 
 	function fileExists(filePath){
@@ -99,7 +99,7 @@
 				});
 
 				res.on('end', function(){
-					return deferred.resolve(container)
+					return deferred.resolve(container);
 				});
 
 				res.on('error', function(err){
@@ -109,14 +109,14 @@
 
 		req.on('error', function(err) {
 			util.logger.log(err, 'error');
-			deferred.reject;
+			return deferred.reject(err);
 		});
 
 		// write data to request body
 		req.write('data\n');
 		req.end();
 
-		return deferred.promise
+		return deferred.promise;
 	}
 
 	function makeOptions(urlstr){
@@ -157,9 +157,9 @@
 	util.getPageTemplate = getPageTemplate;
 	util.generateUID = generateUID;
 	util.fetchPage = fetchPage;
-	util.makeOptions = makeOptions,
+	util.makeOptions = makeOptions;
 	util.getRawS3Path = getRawS3Path;
 	util.logger = logger;
 
 	module.exports = util;
-})()
+})();

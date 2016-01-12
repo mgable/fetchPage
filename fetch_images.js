@@ -3,7 +3,6 @@
 var fs = require('fs'),
 	request = require('request'),
 	Q = require("q"),
-	config = require('./config.js'),
 	cheerio = require('cheerio'),
 	url = require('url'),
 	util = require('./util.js'),
@@ -11,13 +10,10 @@ var fs = require('fs'),
 	downloadImages = true;
 
 function download(uri, imagePath, filename, callback){
-	var callback = callback || _.noop;
+	var callback = callback || _.noop; // jshint ignore:line
 
 	if (downloadImages){
-		request.head(uri, function(err, res, body){
-			// console.log('content-type:', res.headers['content-type']);
-			// console.log('content-length:', res.headers['content-length']);
-
+		request.head(uri, function(/*err, res, body*/){
 			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback).on('error', function(err){
 				util.logger.log(err, 'error');
 			});
@@ -26,11 +22,65 @@ function download(uri, imagePath, filename, callback){
 		console.info("not fetching - " + uri);
 		callback();
 	}
-};
+}
+
+function getCompletedItemUrl(urlstr){
+	var urlObj = (url.parse(urlstr, true));
+	return urlObj.query.mpre;
+}
+
+function makeLargerImageUrl(url){
+	return url.replace(/(?!s\-l)64/, "400");
+}
+
+function getFileName(id, suffix){
+	return   "t." + suffix;
+}
+
+function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
+	item.images = {};
+	item.images.original = additionalImages;
+	item.images.local = [];
+
+	additionalImages.forEach(function(v,index){
+		var filename = "i_" + index + ".jpg",
+			largerImageUrl = makeLargerImageUrl(v),
+			itemImagePath = imagePath + item.id + "/";
+		
+		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
+		item.images.local.push(util.makeLocalImagePath(dateStr, item.id, filename));
+	});
+
+	return item;
+}
+
+function collectAdditionalImages(data){
+	var $ = cheerio.load(data),
+		results = [];
+
+	$(".lst.icon").first().find("li img").each(function(i,v){
+		results.push(v.attribs.src);
+	});
+
+	if (!results.length){
+		results.push($('#icImg').attr("src"));
+	}
+
+	return results;
+}
 
 function setDownloadFlag(flag){
 	console.info("setting download images to " + flag);
 	downloadImages = flag;
+}
+
+function getCompletedItemLink(data, link){
+	try{
+		var $ = cheerio.load(data);
+		return $("a:contains('See original listing')")[0].attribs.href;
+	}catch(e){
+		util.logger.log("fetch image ERROR: " + link, 'error');
+	}
 }
 
 function fetchImages(dateStr, imagePath, items){
@@ -39,7 +89,7 @@ function fetchImages(dateStr, imagePath, items){
 
 	util.makeDirectories(imagePath);
 
-	items.forEach(function(item, index){
+	items.forEach(function(item){
 		var src = {};
 		src.original = item.src;
 
@@ -60,7 +110,7 @@ function fetchImages(dateStr, imagePath, items){
 }
 
 function fetchAdditionalImages(dateStr, imagePath, items){
-	var results = items.map(function(item,index){
+	var results = items.map(function(item){
 		var deferred = Q.defer();
 
 		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function (data){
@@ -78,73 +128,6 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 	});
 
 	return results;
-}
-
-function collectAdditionalImages(data){
-	var $ = cheerio.load(data),
-		results = [];
-
-	$(".lst.icon").first().find("li img").each(function(i,v){
-		results.push(v.attribs.src);
-	});
-
-	if (!results.length){
-		results.push($('#icImg').attr("src"));
-	}
-
-	return results;
-}
-
-function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
-	item.images = {};
-	item.images.original = additionalImages;
-	item.images.local = [];
-
-	additionalImages.forEach(function(v,index){
-		var filename = "i_" + index + ".jpg",
-			largerImageUrl = makeLargerImageUrl(v),
-			itemImagePath = imagePath + item.id + "/";
-		
-		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
-		item.images.local.push(util.makeLocalImagePath(dateStr, item.id, filename));
-	});
-
-	return item;
-}
-
-function getCompletedItemLink(data, link){
-	try{
-		var $ = cheerio.load(data);
-		return $("a:contains('See original listing')")[0].attribs.href;
-	}catch(e){
-		util.logger.log(link, 'error');
-	}
-}
-
-function getCompletedItemUrl(urlstr){
-	var urlObj = (url.parse(urlstr, true));
-	return urlObj.query.mpre
-}
-
-function makeLargerImageUrl(url){
-	return url.replace(/(?!s\-l)64/, "400");
-}
-
-
-// function makeLocalImagePath(dataStr, id, filename){
-// 	return dataStr + "/" + id + "/" + filename
-// }
-
-function getFileName(id, suffix){
-	return   "t." + suffix;
-}
-
-function addDirectory(path){
-	if (!fs.existsSync(path)) {
-		fs.mkdirSync(path);
-	}
-
-	return path + "/";
 }
 
 module.exports = {
