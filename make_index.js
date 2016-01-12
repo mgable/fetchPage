@@ -4,8 +4,9 @@ var fs = require("fs"),
 	config = require('./config.js'),
 	_ = require("underscore"),
 	util = require('./util.js'),
-	basePath = config.dataRoot + config.category.name + "/diffs/",
-	fileName = config.category.name + ".json",
+	category = config.category.name ,
+	basePath = config.dataRoot + category + "/diffs/",
+	fileName = category + ".json",
 	index = [];
 
 var years = reject(util.readDirectory(basePath));
@@ -31,7 +32,9 @@ years.forEach(function(year){
 	});
 });
 
-fs.writeFileSync(basePath + "test_ " + fileName, JSON.stringify(index));
+fs.writeFileSync(util.getStoreFilePath(category) + fileName, JSON.stringify(index));
+
+util.logger.log("saving index file: " + util.getStoreFilePath(category) + fileName);
 
 function reject(data){
 	return _.reject(data, function(name){ return /^\./.test(name)});

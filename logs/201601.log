@@ -1,0 +1,5 @@
+{"level":"info","message":"There are 66 new items added for 20160112","timestamp":"2016-01-12T15:13:56.513Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/12/advertising_tins.json","timestamp":"2016-01-12T15:14:03.305Z"}
+{"level":"info","message":"the total number of items is 2365","timestamp":"2016-01-12T15:14:03.323Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-12T15:14:03.324Z"}
+{"level":"info","message":"saving bulk import file: /Users/markgable/Sites/data/collectorsDB/advertising_tins/to_be_indexed/advertising_tins.formatted.json","timestamp":"2016-01-12T15:38:03.776Z"}

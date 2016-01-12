@@ -5,14 +5,13 @@
 		config = require('./config.js'),
 		category = config.category.name,
 		filename = category + ".formatted.json",
-		document = JSON.parse(read(category));
+		path = util.getStoreFilePath(category) + category + ".json",
+		document = util.getFileContents(path);
 
 	save(filename, category, parse(document));
 
 	function parse(line){
 		var results = '';
-
-		//console.info(line.length);
 
 		if (typeof line === "object"){
 			line.forEach(function(v,i,a){
@@ -26,14 +25,9 @@
 		return line;
 	}
 
-	function save(filename, category, rawData){
+	function save(filename, category, data){
 		var path = util.getIndexPathAndFile(category)
-		fs.writeFileSync(path, rawData);
-		console.info("wrote file " + path);
-	}
-
-	function read(category){
-		var path = (util.getStoreFilePath(category) + category + ".json");
-		return fs.readFileSync(path).toString()
+		fs.writeFileSync(path, data);
+		util.logger.log("saving bulk import file: " + path);
 	}
 })()
