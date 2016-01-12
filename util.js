@@ -36,7 +36,7 @@
 	}
 
 	function getRawS3Path(name, fileOverwrite){
-		return name + "/" + makePathFromDateString((fileOverwrite || getDateString())) + "/";
+		return name + "/diff/" + makePathFromDateString((fileOverwrite || getDateString())) + "/";
 	}
 
 	function makePathFromDateString(dateStr){
@@ -67,12 +67,17 @@
 	    }
 	}
 
+	function makeLocalImagePath(dateStr, id, filename){
+		return makePathFromDateString(dateStr) + "/" + id + "/" + filename;
+	}
+
+
 	function getStoreFilePath(category){
 		return config.dataRoot  + category + '/store/';
 	}
 
 	function getImagePath(category, dateStr){
-		return getStoreFilePath(category) + "images/" +  dateStr + "/";
+		return getStoreFilePath(category) + "images/" +  makePathFromDateString(dateStr) + "/";
 	}
 
 	function getIndexPathAndFile(category){
@@ -127,8 +132,15 @@
 
 	function makeDirectories(path){
 		nodefs.mkdirSync(path, "41777", true);
+		return path + "/";
 	}
 
+	function readDirectory(path){
+		return fs.readdirSync(path);
+	}
+
+	util.readDirectory = readDirectory;
+	util.makeLocalImagePath = makeLocalImagePath;
 	util.makeDirectories = makeDirectories;
 	util.getDateString = getDateString;
 	util.getFileName = getFileName;

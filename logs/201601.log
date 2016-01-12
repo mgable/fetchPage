@@ -144,3 +144,129 @@
 {"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-08T22:56:54.764Z"}
 {"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:56:55.446Z"}
 {"level":"info","message":"Successfully uploaded data to: advertising_tins/2016/01/08/advertising_tins_20160108.json","timestamp":"2016-01-08T22:56:56.304Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-10T02:40:49.514Z"}
+{"level":"info","message":"/ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-10T02:40:59.954Z"}
+{"level":"info","message":"There are 35 new items added for 20160109","timestamp":"2016-01-10T03:00:03.152Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/09/advertising_tins.json","timestamp":"2016-01-10T03:00:06.496Z"}
+{"level":"info","message":"the total number of items is 2395","timestamp":"2016-01-10T03:00:06.514Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T03:00:06.514Z"}
+{"level":"info","message":"There are 106 new items added for 20160109","timestamp":"2016-01-10T16:08:16.946Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331747089302","timestamp":"2016-01-10T16:08:26.467Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201495611289","timestamp":"2016-01-10T16:08:27.521Z"}
+{"level":"info","message":"There are 106 new items added for 20160109","timestamp":"2016-01-10T16:10:02.799Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/09/advertising_tins.json","timestamp":"2016-01-10T16:10:17.311Z"}
+{"level":"info","message":"the total number of items is 2583","timestamp":"2016-01-10T16:10:17.335Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T16:10:17.337Z"}
+{"level":"info","message":"There are 536 new items added for 20151214","timestamp":"2016-01-10T16:36:49.023Z"}
+{"level":"info","message":"There are 536 new items added for 20151214","timestamp":"2016-01-10T16:44:11.265Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141843406489","timestamp":"2016-01-10T16:44:13.358Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131671463419","timestamp":"2016-01-10T16:44:14.821Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131669935272","timestamp":"2016-01-10T16:44:17.599Z"}
+{"level":"info","message":"There are 45 new items added for 20151215","timestamp":"2016-01-10T16:47:09.320Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/15/advertising_tins.json","timestamp":"2016-01-10T16:47:13.762Z"}
+{"level":"info","message":"the total number of items is 2628","timestamp":"2016-01-10T16:47:13.927Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T16:47:13.928Z"}
+{"level":"info","message":"There are 154 new items added for 20151216","timestamp":"2016-01-10T17:31:31.856Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/16/advertising_tins.json","timestamp":"2016-01-10T17:31:42.134Z"}
+{"level":"info","message":"the total number of items is 735","timestamp":"2016-01-10T17:31:42.208Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T17:31:42.209Z"}
+{"level":"info","message":"There are 71 new items added for 20151217","timestamp":"2016-01-10T17:33:30.187Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/17/advertising_tins.json","timestamp":"2016-01-10T17:33:34.957Z"}
+{"level":"info","message":"the total number of items is 806","timestamp":"2016-01-10T17:33:35.002Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T17:33:35.003Z"}
+{"level":"info","message":"There are 54 new items added for 20151218","timestamp":"2016-01-10T17:33:48.602Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/18/advertising_tins.json","timestamp":"2016-01-10T17:33:53.811Z"}
+{"level":"info","message":"the total number of items is 860","timestamp":"2016-01-10T17:33:53.860Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T17:33:53.860Z"}
+{"level":"info","message":"There are 161 new items added for 20151219","timestamp":"2016-01-10T17:34:00.064Z"}
+{"level":"info","message":"There are 16 new items added for 20151220","timestamp":"2016-01-10T17:34:22.086Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/20/advertising_tins.json","timestamp":"2016-01-10T17:34:25.306Z"}
+{"level":"info","message":"the total number of items is 876","timestamp":"2016-01-10T17:34:25.312Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T17:34:25.313Z"}
+{"level":"info","message":"There are 154 new items added for 20151221","timestamp":"2016-01-10T18:31:29.236Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/21/advertising_tins.json","timestamp":"2016-01-10T18:31:37.924Z"}
+{"level":"info","message":"the total number of items is 1030","timestamp":"2016-01-10T18:31:37.977Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:31:37.978Z"}
+{"level":"info","message":"There are 71 new items added for 20151222","timestamp":"2016-01-10T18:33:17.144Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/22/advertising_tins.json","timestamp":"2016-01-10T18:33:22.227Z"}
+{"level":"info","message":"the total number of items is 1101","timestamp":"2016-01-10T18:33:22.271Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:33:22.272Z"}
+{"level":"info","message":"There are 92 new items added for 20151223","timestamp":"2016-01-10T18:33:32.489Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/23/advertising_tins.json","timestamp":"2016-01-10T18:33:41.543Z"}
+{"level":"info","message":"the total number of items is 1193","timestamp":"2016-01-10T18:33:41.563Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:33:41.563Z"}
+{"level":"info","message":"There are 44 new items added for 20151224","timestamp":"2016-01-10T18:33:51.349Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/24/advertising_tins.json","timestamp":"2016-01-10T18:33:57.325Z"}
+{"level":"info","message":"the total number of items is 1237","timestamp":"2016-01-10T18:33:57.347Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:33:57.348Z"}
+{"level":"info","message":"There are 47 new items added for 20151225","timestamp":"2016-01-10T18:34:04.338Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/25/advertising_tins.json","timestamp":"2016-01-10T18:34:07.660Z"}
+{"level":"info","message":"the total number of items is 1284","timestamp":"2016-01-10T18:34:07.687Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:34:07.687Z"}
+{"level":"info","message":"There are 35 new items added for 20151226","timestamp":"2016-01-10T18:38:00.869Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/26/advertising_tins.json","timestamp":"2016-01-10T18:38:03.560Z"}
+{"level":"info","message":"the total number of items is 1319","timestamp":"2016-01-10T18:38:03.607Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:38:03.608Z"}
+{"level":"info","message":"There are 66 new items added for 20151227","timestamp":"2016-01-10T18:38:08.917Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/27/advertising_tins.json","timestamp":"2016-01-10T18:38:13.765Z"}
+{"level":"info","message":"the total number of items is 1385","timestamp":"2016-01-10T18:38:13.776Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:38:13.776Z"}
+{"level":"info","message":"There are 87 new items added for 20151228","timestamp":"2016-01-10T18:38:18.522Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/28/advertising_tins.json","timestamp":"2016-01-10T18:38:25.179Z"}
+{"level":"info","message":"the total number of items is 1472","timestamp":"2016-01-10T18:38:25.190Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:38:25.190Z"}
+{"level":"info","message":"There are 64 new items added for 20151229","timestamp":"2016-01-10T18:38:30.142Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141858454338","timestamp":"2016-01-10T18:38:31.079Z"}
+{"level":"info","message":"There are 54 new items added for 20151230","timestamp":"2016-01-10T18:38:40.284Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/30/advertising_tins.json","timestamp":"2016-01-10T18:38:44.310Z"}
+{"level":"info","message":"the total number of items is 1526","timestamp":"2016-01-10T18:38:44.322Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:38:44.323Z"}
+{"level":"info","message":"There are 54 new items added for 20151231","timestamp":"2016-01-10T18:38:48.220Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2015/12/31/advertising_tins.json","timestamp":"2016-01-10T18:38:52.501Z"}
+{"level":"info","message":"the total number of items is 1580","timestamp":"2016-01-10T18:38:52.525Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:38:52.525Z"}
+{"level":"info","message":"There are 32 new items added for 20160101","timestamp":"2016-01-10T18:39:05.290Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/01/advertising_tins.json","timestamp":"2016-01-10T18:39:08.049Z"}
+{"level":"info","message":"the total number of items is 1612","timestamp":"2016-01-10T18:39:08.063Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:39:08.064Z"}
+{"level":"info","message":"There are 31 new items added for 20160102","timestamp":"2016-01-10T18:39:12.077Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/02/advertising_tins.json","timestamp":"2016-01-10T18:39:14.952Z"}
+{"level":"info","message":"the total number of items is 1643","timestamp":"2016-01-10T18:39:14.976Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-10T18:39:14.977Z"}
+{"level":"info","message":"There are 47 new items added for 20160103","timestamp":"2016-01-11T05:07:58.735Z"}
+{"level":"error","message":"http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/311512869806","timestamp":"2016-01-11T05:07:59.839Z"}
+{"level":"info","message":"There are 114 new items added for 20160104","timestamp":"2016-01-11T05:08:48.784Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/04/advertising_tins.json","timestamp":"2016-01-11T05:08:54.218Z"}
+{"level":"info","message":"the total number of items is 1757","timestamp":"2016-01-11T05:08:54.235Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:08:54.235Z"}
+{"level":"info","message":"There are 101 new items added for 20160105","timestamp":"2016-01-11T05:09:33.226Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/05/advertising_tins.json","timestamp":"2016-01-11T05:09:39.428Z"}
+{"level":"info","message":"the total number of items is 1858","timestamp":"2016-01-11T05:09:39.482Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:09:39.483Z"}
+{"level":"info","message":"There are 101 new items added for 20160105","timestamp":"2016-01-11T05:10:34.961Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/05/advertising_tins.json","timestamp":"2016-01-11T05:10:46.056Z"}
+{"level":"info","message":"the total number of items is 1959","timestamp":"2016-01-11T05:10:46.126Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:10:46.126Z"}
+{"level":"info","message":"There are 69 new items added for 20160106","timestamp":"2016-01-11T05:11:31.710Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/06/advertising_tins.json","timestamp":"2016-01-11T05:11:36.427Z"}
+{"level":"info","message":"the total number of items is 2028","timestamp":"2016-01-11T05:11:36.450Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:11:36.450Z"}
+{"level":"info","message":"There are 56 new items added for 20160107","timestamp":"2016-01-11T05:12:18.061Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/07/advertising_tins.json","timestamp":"2016-01-11T05:12:23.856Z"}
+{"level":"info","message":"the total number of items is 2084","timestamp":"2016-01-11T05:12:23.896Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:12:23.896Z"}
+{"level":"info","message":"There are 83 new items added for 20160108","timestamp":"2016-01-11T05:13:00.046Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/08/advertising_tins.json","timestamp":"2016-01-11T05:13:04.925Z"}
+{"level":"info","message":"the total number of items is 2167","timestamp":"2016-01-11T05:13:04.952Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:13:04.952Z"}
+{"level":"info","message":"There are 83 new items added for 20160108","timestamp":"2016-01-11T05:13:46.677Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/08/advertising_tins.json","timestamp":"2016-01-11T05:13:54.585Z"}
+{"level":"info","message":"the total number of items is 2250","timestamp":"2016-01-11T05:13:54.603Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T05:13:54.604Z"}
+{"level":"info","message":"There are 0 new items added for 20160111","timestamp":"2016-01-11T05:16:07.826Z"}
+{"level":"info","message":"There are 11 new items added for 20160110","timestamp":"2016-01-11T05:17:03.029Z"}
+{"level":"info","message":"Just a test - nothing saved","timestamp":"2016-01-11T05:17:04.968Z"}
+{"level":"info","message":"There are 116 new items added for 20160111","timestamp":"2016-01-11T15:38:52.516Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/11/advertising_tins.json","timestamp":"2016-01-11T15:39:10.760Z"}
+{"level":"info","message":"the total number of items is 2366","timestamp":"2016-01-11T15:39:10.965Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-11T15:39:10.966Z"}

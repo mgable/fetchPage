@@ -3,7 +3,6 @@
 var fs = require('fs'),
 	request = require('request'),
 	Q = require("q"),
-	fetchUtil = require('./util.js'),
 	config = require('./config.js'),
 	cheerio = require('cheerio'),
 	url = require('url'),
@@ -24,6 +23,7 @@ function download(uri, imagePath, filename, callback){
 			});
 		});
 	} else {
+		console.info("not fetching - " + uri);
 		callback();
 	}
 };
@@ -37,7 +37,7 @@ function fetchImages(dateStr, imagePath, items){
 	var dateRE = /\w{3,4}$/,
 		deferred = Q.defer();
 
-	addDirectory(imagePath);
+	util.makeDirectories(imagePath);
 
 	items.forEach(function(item, index){
 		var src = {};
@@ -45,9 +45,9 @@ function fetchImages(dateStr, imagePath, items){
 
 		var suffix = src.original.match(dateRE)[0],
 			filename = getFileName(item.id, suffix),
-			itemImagePath = addDirectory(imagePath + item.id);
+			itemImagePath = util.makeDirectories(imagePath + item.id);
 
-		src.local =  makeLocalImagePath(dateStr, item.id, filename);
+		src.local =  util.makeLocalImagePath(dateStr, item.id, filename);
 		item.src = src;
 
 		download(src.original, itemImagePath, filename, function(){
@@ -106,7 +106,7 @@ function downloadAdditionalImages(item, additionalImages, imagePath, dateStr){
 			itemImagePath = imagePath + item.id + "/";
 		
 		download(largerImageUrl, itemImagePath, filename); //uri, imagePath, filename, callback
-		item.images.local.push(makeLocalImagePath(dateStr, item.id, filename));
+		item.images.local.push(util.makeLocalImagePath(dateStr, item.id, filename));
 	});
 
 	return item;
@@ -131,9 +131,9 @@ function makeLargerImageUrl(url){
 }
 
 
-function makeLocalImagePath(dataStr, id, filename){
-	return dataStr + "/" + id + "/" + filename
-}
+// function makeLocalImagePath(dataStr, id, filename){
+// 	return dataStr + "/" + id + "/" + filename
+// }
 
 function getFileName(id, suffix){
 	return   "t." + suffix;

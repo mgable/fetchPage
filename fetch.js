@@ -52,7 +52,7 @@
 			saveLocal(path, filename, data)
 			saveToS3(file, data);
 		} else {
-			console.info(data);
+			console.info("saving file " + filename);
 			console.info("************* Just Testing ****************");
 		}
 	}

@@ -89,20 +89,25 @@
 
 	function save(filename, data){
 		console.info("saving data");
-		var newData = store.concat(data);
+		var allData = store.concat(data);
 
 		if(!program.test){
-			saveDiff(data)
-			fs.writeFileSync(filename, JSON.stringify(newData));
-			util.logger.log("the total number of items is " + newData.length);
-			util.logger.log("wrote file " + filename);
+			saveDiff(data);
+			saveIndex(filename, allData);
 		} else {
+			console.info("saving file " + filename);
 			util.logger.log("Just a test - nothing saved");
 		}
 	}
 
 	function makeFileName(path, category){
 		return path + category + ".json"
+	}
+
+	function saveIndex(filename, data){
+		fs.writeFileSync(filename, JSON.stringify(data));
+		util.logger.log("the total number of items is " + data.length);
+		util.logger.log("wrote file " + filename);
 	}
 
 	function saveDiff(data){

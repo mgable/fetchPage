@@ -20,7 +20,7 @@ AWS.config.credentials = credentials;
 
 var s3bucket = new AWS.S3({ params: {Bucket: 'mgable', region: "Northern California"} });
 
-fetchPage(options).then(function(data){
+util.fetchPage(options).then(function(data){
 	console.info("we have data");
 	var params = {Key: 'test/myKey', Body: data};
 
@@ -33,35 +33,7 @@ fetchPage(options).then(function(data){
 	});
 });
 
-console.info("hello world");
 
-function fetchPage(options){
-	var deferred = Q.defer(),
-		container = [],
-		req = http.request(options, function(res) {
-
-			res.setEncoding('utf8');
-
-			res.on('data', function (chunk) {
-				container += chunk;
-			});
-
-			res.on('end', function(){
-				return deferred.resolve(container)
-			});
-		});
-
-	req.on('error', function(e) {
-		console.error('problem with request: ' + e.message);
-		deferred.reject;
-	});
-
-	// write data to request body
-	req.write('data\n');
-	req.end();
-
-	return deferred.promise;
-}
 
 // s3bucket.getObject({Bucket: 'mgable', Key: 'index.html'}).on('success', function(response) {
 //   console.log("Key was", response.data.Body.toString());
