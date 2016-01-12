@@ -9,9 +9,18 @@ var domain = 'www.collectorsweekly.com';
 var pageUrlTemplate = '/ajax/category-auctions.php?id= *** config.category.id *** &sort=completed&limit=1000&offset=0';
 // ( \*{3}) config.category.id (\*{3}) 
 
+var aws = {};
+aws.dataRoot = "https://s3-us-west-1.amazonaws.com/collectors-db/";
+
+var local = {};
+local.dataRoot = dataRoot;
+
+
 module.exports = {
 	category: category,
 	dataRoot: dataRoot,
 	domain: domain,
-	pageUrlTemplate: pageUrlTemplate
+	pageUrlTemplate: pageUrlTemplate,
+	aws: aws,
+	local: local
 };

@@ -3,3 +3,6 @@
 {"level":"info","message":"the total number of items is 2365","timestamp":"2016-01-12T15:14:03.323Z"}
 {"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-12T15:14:03.324Z"}
 {"level":"info","message":"saving bulk import file: /Users/markgable/Sites/data/collectorsDB/advertising_tins/to_be_indexed/advertising_tins.formatted.json","timestamp":"2016-01-12T15:38:03.776Z"}
+{"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-12T21:00:51.947Z"}{"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-12T21:02:44.539Z"}
+{"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-12T21:03:34.660Z"}
+{"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-12T21:03:47.435Z"}

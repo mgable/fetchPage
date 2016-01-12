@@ -11,6 +11,7 @@
 		today = new Date(), 
 		diffDirectory = "/diffs/",
 		rawDirectory = "/raw/",
+		where = "local",
 		util = {};
 
 	function getDateString(d){
@@ -26,12 +27,14 @@
 		return name + "_" + (fileOverwrite || getDateString()) + "." + suffix;
 	}
 
-	function getRawDataPath(name, fileOverwrite){
-		return config.dataRoot + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
+	function getRawDataPath(name, fileOverwrite, location){
+		var location = location || where;
+		return config[location].dataRoot + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
 	}
 
-	function getDiffPath(name, dateStr){
-		return config.dataRoot + name + diffDirectory + makePathFromDateString(dateStr) + "/";
+	function getDiffPath(name, dateStr, location){
+		var location = location || where;
+		return config[location].dataRoot + name + diffDirectory + makePathFromDateString(dateStr) + "/";
 	}
 
 	function getPageTemplate(id){
@@ -75,16 +78,19 @@
 	}
 
 
-	function getStoreFilePath(category){
-		return config.dataRoot  + category + '/store/';
+	function getStoreFilePath(category, location){
+		var location = location || where;
+		return config[location].dataRoot  + category + '/store/';
 	}
 
-	function getImagePath(category, dateStr){
-		return getStoreFilePath(category) + "images/" +  makePathFromDateString(dateStr) + "/";
+	function getImagePath(category, dateStr, location){
+		var location = location || where;
+		return getStoreFilePath(category, location) + "images/" +  makePathFromDateString(dateStr) + "/";
 	}
 
-	function getIndexPathAndFile(category){
-		return config.dataRoot +  category + "/to_be_indexed/" + category + ".formatted.json";
+	function getIndexPathAndFile(category, location){
+		var location = location || where;
+		return config[location].dataRoot +  category + "/to_be_indexed/" + category + ".formatted.json";
 	}
 
 	function fetchPage(options){

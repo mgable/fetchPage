@@ -75,7 +75,6 @@
 		try {
 			return eval("Date.today().last()." + which + "()"); // jshint ignore:line
 		}catch(e){
-			util.logger.log("PARSE ERROR - could not parse date " + which, 'error');
 			return Date.today();
 		}
 	}

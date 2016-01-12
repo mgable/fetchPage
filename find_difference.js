@@ -20,18 +20,17 @@
 	fetch.setDownloadFlag(!program.noimages);
 
 	var	category = config.category.name,
-		fileOverwrite = program.args[0] || util.getDateString(), // an optional date string e.g. '20151213' to retrieve historical data
-		dateStr = fileOverwrite || util.getDateString(), // official date label use for file names and paths
+		dateStr = program.args[0] || util.getDateString(), // an optional date string e.g. '20151213' to retrieve historical data
 
 		// make all paths
-		rawDataPath = util.getRawDataPath(category, fileOverwrite), // path to raw data (today or historical)
+		rawDataPath = util.getRawDataPath(category, dateStr), // path to raw data (today or historical)
 		storeFilePath = util.getStoreFilePath(category), //config.dataRoot + category + 'store/' ,
-		imagePath = util.getImagePath(category, fileOverwrite), //storeFilePath + "images/" +  dateStr,
-		diffPath = util.getDiffPath(category, fileOverwrite), //config.dataRoot + category + '/diff/' + dateStr ,
+		imagePath = util.getImagePath(category, dateStr), //storeFilePath + "images/" +  dateStr,
+		diffPath = util.getDiffPath(category, dateStr), //config.dataRoot + category + '/diff/' + dateStr ,
 
 		// get data for today and yesterday
-		today = util.getFileContents(rawDataPath + util.getFileName(category, "json", fileOverwrite)), //name, suffix, fileOverwrite
-		yesterday = util.getFileContents(getYesterdayFileName(fileOverwrite)) || [],
+		today = util.getFileContents(rawDataPath + util.getFileName(category, "json", dateStr)), //name, suffix, dateStr
+		yesterday = util.getFileContents(getYesterdayFileName(dateStr)) || [],
 
 		// get existing information
 		storeFile =  storeFilePath + category + ".json",
