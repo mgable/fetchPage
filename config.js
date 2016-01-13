@@ -1,26 +1,38 @@
 "use strict";
 
-var category = {name: "advertising_tins", id: 1175};
+(function(){
+	var sys_config = require('./sys_config.js');
 
-var dataRoot = "/Users/markgable/Sites/data/collectorsDB/";
+	var category = {name: "advertising_tins", id: 1175};
 
-var domain = 'www.collectorsweekly.com';
-
-var pageUrlTemplate = '/ajax/category-auctions.php?id= *** config.category.id *** &sort=completed&limit=1000&offset=0';
-// ( \*{3}) config.category.id (\*{3}) 
-
-var aws = {};
-aws.dataRoot = "https://s3-us-west-1.amazonaws.com/collectors-db/";
-
-var local = {};
-local.dataRoot = dataRoot;
+	var dataRoot = "/Users/markgable/Sites/data/collectorsDB/",
+		domain = 'www.collectorsweekly.com',
+		pageUrlTemplate = '/ajax/category-auctions.php?id= *** config.category.id *** &sort=completed&limit=1000&offset=0';
 
 
-module.exports = {
-	category: category,
-	dataRoot: dataRoot,
-	domain: domain,
-	pageUrlTemplate: pageUrlTemplate,
-	aws: aws,
-	local: local
-};
+	var aws = {};
+	var bucket = 'collectors-db';
+
+	aws.dataSource = "https://s3-us-west-1.amazonaws.com/" + bucket + "/";
+	aws.dataRoot = "";
+
+	var local = {};
+	local.dataRoot = dataRoot;
+
+	var contentType = {
+		"json": "application/json; charset=UTF-8",
+		"jpg": "image/jpeg"
+	};
+
+	module.exports = {
+		category: category,
+		dataRoot: dataRoot,
+		domain: domain,
+		pageUrlTemplate: pageUrlTemplate,
+		aws: aws,
+		local: local,
+		contentType: contentType,
+		bucket: bucket,
+		sys_config: sys_config
+	};
+})();

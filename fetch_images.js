@@ -87,7 +87,7 @@ function fetchImages(dateStr, imagePath, items){
 	var dateRE = /\w{3,4}$/,
 		deferred = Q.defer();
 
-	util.makeDirectories(imagePath);
+	if(downloadImages){util.makeDirectories(imagePath);}
 
 	items.forEach(function(item){
 		var src = {};
@@ -95,7 +95,9 @@ function fetchImages(dateStr, imagePath, items){
 
 		var suffix = src.original.match(dateRE)[0],
 			filename = getFileName(item.id, suffix),
-			itemImagePath = util.makeDirectories(imagePath + item.id);
+			itemImagePath = imagePath + item.id + "/";
+
+		if (downloadImages){util.makeDirectories(itemImagePath);}
 
 		src.local =  util.makeLocalImagePath(dateStr, item.id, filename);
 		item.src = src;

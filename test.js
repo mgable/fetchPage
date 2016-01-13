@@ -16,6 +16,7 @@ console.info(rawDataPath);
 console.info(storeFilePath);
 console.info(imagePath);
 console.info(diffPath);
+console.info(options);
 
 // util.fetchPage(options).then(function(data){
 // 	console.info("got data");

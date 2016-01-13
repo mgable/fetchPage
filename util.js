@@ -1,7 +1,10 @@
+/* jshint shadow: true */
+
 "use strict";
 
 (function() {
-	var config = require('./config.js'),
+	var AWS = require('aws-sdk'),
+		config = require('./config.js'),
 		fs  = require("fs"),
 		nodefs = require("node-fs"),
 		Q = require("q"),
@@ -9,10 +12,11 @@
 		url = require('url'),
 		logger = require('./logging.js'),
 		today = new Date(), 
-		diffDirectory = "/diffs/",
-		rawDirectory = "/raw/",
-		where = "local",
+		diffDirectory = config.sys_config.diffDirectory || "/diffs/",
+		rawDirectory = config.sys_config.rawDirectory || "/raw/",
+		where = config.sys_config.system,
 		util = {};
+
 
 	function getDateString(d){
 		var date = d || today;
@@ -39,10 +43,6 @@
 
 	function getPageTemplate(id){
 		return config.pageUrlTemplate.replace(/( \*{3}) config\.category\.id (\*{3} )/, id);
-	}
-
-	function getRawS3Path(name, fileOverwrite){
-		return name + rawDirectory + makePathFromDateString((fileOverwrite || getDateString())) + "/";
 	}
 
 	function makePathFromDateString(dateStr){
@@ -148,6 +148,35 @@
 		return fs.readdirSync(path);
 	}
 
+	function save(filename, path, file, data, contentType){ //filename, path, file, data, config.contentType.json
+		if (where === "aws"){
+			saveToS3(filename, path, file, data, contentType);
+		} else if (where === "local"){
+			saveLocal(filename, path, file, data);
+		}
+	}
+
+	function saveToS3(filename, path, file, data, contentType){
+		var credentials = new AWS.SharedIniFileCredentials({profile: 'mgable'});
+		AWS.config.credentials = credentials;
+
+		var s3bucket = new AWS.S3({ params: {Bucket: config.bucket}});
+		
+		s3bucket.upload({"Key": file, "Body": data, "ContentType": contentType}, function(err, data) { // jshint ignore:line
+			if (err) {
+				util.logger.log("ERROR - S3: " + file + ": " + err, 'error');
+			} else {
+				util.logger.log("saving - S3: " + file);
+			}
+		});
+	}
+
+	function saveLocal(filename, path, file, data){
+		util.makeDirectories(path); 
+		fs.writeFileSync(file, data);
+		util.logger.log("saving - local: " + file);
+	}
+
 	util.readDirectory = readDirectory;
 	util.makeLocalImagePath = makeLocalImagePath;
 	util.makeDirectories = makeDirectories;
@@ -164,7 +193,7 @@
 	util.generateUID = generateUID;
 	util.fetchPage = fetchPage;
 	util.makeOptions = makeOptions;
-	util.getRawS3Path = getRawS3Path;
+	util.save = save;
 	util.logger = logger;
 
 	module.exports = util;

@@ -1,9 +1,7 @@
 "use strict";
 
 (function(){
-	var AWS = require('aws-sdk'),
-		fs = require('fs'),
-		util = require('./util.js'),
+	var util = require('./util.js'),
 		config = require('./config.js'),
 		program = require('commander'),
 		parser = require('./parser.js'),
@@ -28,47 +26,18 @@
 
 	function _process(data){
 		var document = parser.parse(data);
-		save (document);
+		save(document);
 	}
 
 	function save(data){
-		var file = util.getFileName(category, "json");
-
-		saveLocal(file, data);
-		saveToS3(file, data);
-	}
-
-	function saveLocal(file, data){
-		var path = util.getRawDataPath(category),
-			filename = path + file;
+		var filename = util.getFileName(category, "json"),
+			path = util.getRawDataPath(category),
+			file = path + filename;
 
 		if (!program.test){
-			util.makeDirectories(path); 
-			fs.writeFileSync(filename, data);
-			util.logger.log("saving - local: " + filename);
+			util.save(filename, path, file, data, config.contentType.json);
 		} else {
-			console.info("TEST file: " + filename);
-			console.info("************* LOCAL: Just Testing - nothing saved!! ****************");
-		}
-	}
-
-	function saveToS3(file, data){
-		var credentials = new AWS.SharedIniFileCredentials({profile: 'mgable'});
-		AWS.config.credentials = credentials;
-
-		var s3bucket = new AWS.S3({ params: {Bucket: 'collectors-db', region: "Northern California"} }),
-			filename = util.getRawS3Path(category) + file;
-		
-		if (!program.test){
-			s3bucket.upload({"Key": filename, "Body": data, "ContentType": "application/json; charset=UTF-8"}, function(err, data) { // jshint ignore:line
-				if (err) {
-					util.logger.log("ERROR - S3: " + filename + ": " + err, 'error');
-				} else {
-					util.logger.log("saving - S3: " + filename);
-				}
-			});
-		} else {
-			console.info("TEST file: " + filename);
+			console.info("TEST file: " + file);
 			console.info("************* S3: Just Testing - nothing saved!! ****************");
 		}
 	}
