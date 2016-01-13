@@ -66,3 +66,30 @@
 {"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw-test/2016/01/13/advertising_tins_20160113.json","timestamp":"2016-01-13T22:21:12.745Z"}
 {"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-13T22:22:10.111Z"}
 {"level":"info","message":"saving - S3: advertising_tins/raw-test/2016/01/13/advertising_tins_20160113.json","timestamp":"2016-01-13T22:22:11.216Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:43:27.089Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:49:46.859Z"}
+{"level":"info","message":"Just a test - nothing saved","timestamp":"2016-01-13T22:49:55.729Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:50:11.864Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:55:27.494Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:55:41.485Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/13/advertising_tins.json","timestamp":"2016-01-13T22:55:50.973Z"}
+{"level":"info","message":"the total number of items is 85","timestamp":"2016-01-13T22:55:50.974Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-13T22:55:50.974Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:57:08.606Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/13/advertising_tins.json","timestamp":"2016-01-13T22:57:16.210Z"}
+{"level":"info","message":"the total number of items is 85","timestamp":"2016-01-13T22:57:16.210Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-13T22:57:16.211Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T22:57:56.566Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T23:00:05.127Z"}
+{"level":"error","message":"fetch image ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/272096494506","timestamp":"2016-01-13T23:00:08.839Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T23:00:22.126Z"}
+{"level":"info","message":"the total number of items is 85","timestamp":"2016-01-13T23:00:28.218Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-13T23:00:28.219Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T23:06:29.874Z"}
+{"level":"info","message":"the total number of items is 170","timestamp":"2016-01-13T23:06:35.813Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-13T23:06:35.814Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/13/advertising_tins.json","timestamp":"2016-01-13T23:06:35.853Z"}
+{"level":"info","message":"There are 85 new items added for 20160113","timestamp":"2016-01-13T23:06:49.077Z"}
+{"level":"info","message":"the total number of items is 255","timestamp":"2016-01-13T23:06:55.934Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-13T23:06:55.935Z"}
+{"level":"info","message":"saving diff file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/13/advertising_tins.json","timestamp":"2016-01-13T23:06:55.937Z"}

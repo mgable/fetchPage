@@ -1,9 +1,9 @@
 "use strict";
 
 (function(){
-	var system = "aws",
+	var system = "local",
 		diffDirectory = "/diffs/",
-		rawDirectory = "/raw-test/";
+		rawDirectory = "/raw/";
 
 	module.exports = {
 		system: system,

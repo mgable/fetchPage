@@ -10,7 +10,7 @@
 		Q = require("q"),
 		fetch = require('./fetch_images.js'),
 		program = require('commander'),
-		where = 'aws';
+		where = config.sys_config.system;
 
 	program
 		.version('0.0.1')
@@ -32,24 +32,27 @@
 		todayPath = rawDataPath + util.getFileName(category, "json", dateStr),
 		yesterdayPath = getYesterdayFileName(dateStr);
 
-		// get data for today and yesterday
-		//today = util.getFileContents(todayPath), //name, suffix, dateStr
-		//yesterday = util.getFileContents(yesterdayPath),
-
-		// get existing information
-		//store = util.getFileContents(storeFile),
-
-		// the diff for today versus yesterday expressed in items
-		//newest = diff(today, yesterday);
-
-	getData();
+	getDataFromLocal();
 
 	function parse(data){
 		var results = JSON.parse(data.toString());
 		return results;
 	}
 
-	function getData(){
+	function getDataFromLocal(){
+		// get data for today and yesterday
+		var today = util.getFileContents(todayPath), //name, suffix, dateStr
+			yesterday = util.getFileContents(yesterdayPath) || [],
+
+			// get existing information
+			store = util.getFileContents(storeFile) || [];
+
+		fetchImages(diff(today, yesterday)).then(function(data){
+			save(store, data);
+		});
+	}
+
+	function getDataFromS3(){
 		var todayPromise = util.fetchPage(util.makeOptions(todayPath)).then(parse),
 			yesterdayPromise = util.fetchPage(util.makeOptions(yesterdayPath)).then(parse),
 			storePromise = util.fetchPage(util.makeOptions(storeFile)).then(parse);
@@ -57,8 +60,8 @@
 
 		Q.all([todayPromise, yesterdayPromise, storePromise]).then(function(data){
 			var today = data[0],
-				yesterday = data[1],
-				store = data[2];
+				yesterday = data[1] || [],
+				store = data[2] || [];
 
 			fetchImages(diff(today, yesterday)).then(function(data){
 				save(store, data);
@@ -116,12 +119,11 @@
 	}
 
 	function save(store, data){
-		console.info("saving data");
 		var allData = store.concat(data);
 
 		if(!program.test){
-			saveDiff(data);
 			saveIndex(storeFile, allData);
+			saveDiff(data);
 		} else {
 			console.info("saving file " + storeFile);
 			util.logger.log("Just a test - nothing saved");
@@ -134,16 +136,16 @@
 
 	function saveIndex(filename, data){
 		fs.writeFileSync(filename, JSON.stringify(data));
-		util.saveToS3(filename, data, config.contentType.jpg);
+		//util.saveToS3(filename, data, config.contentType.jpg);
 		util.logger.log("the total number of items is " + data.length);
 		util.logger.log("wrote file " + filename);
 	}
 
 	function saveDiff(data){
-		var filename = makeFileName(diffPath, category);
-		util.saveToS3(filename, data, config.contentType.json);
+		var file = makeFileName(diffPath, category);
+		//util.saveToS3(filename, data, config.contentType.json);
 		nodefs.mkdirSync(diffPath, "41777", true);
-		fs.writeFileSync(filename, JSON.stringify(data));
-		util.logger.log("saving diff file " + filename);
+		fs.writeFileSync(file, JSON.stringify(data));
+		util.logger.log("saving diff file " + file);
 	}
 })();
