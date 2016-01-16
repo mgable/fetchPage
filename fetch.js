@@ -31,14 +31,14 @@
 
 	function save(data){
 		var filename = util.getFileName(category, "json"),
-			path = util.getRawDataPath(category),
+			path = util.getRawDataPath(category, "", "", true),
 			file = path + filename;
 
 		if (!program.test){
 			util.save(filename, path, file, data, config.contentType.json);
 		} else {
 			console.info("TEST file: " + file);
-			console.info("************* S3: Just Testing - nothing saved!! ****************");
+			console.info("************* Just Testing - nothing saved!! ****************");
 		}
 	}
 })();

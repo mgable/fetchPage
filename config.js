@@ -10,11 +10,11 @@
 		pageUrlTemplate = '/ajax/category-auctions.php?id= *** config.category.id *** &sort=completed&limit=1000&offset=0';
 
 
-	var aws = {};
+	var aws = {}, blank = {};
 	var bucket = 'collectors-db';
 
-	aws.dataSource = "https://s3-us-west-1.amazonaws.com/" + bucket + "/";
-	aws.dataRoot = "";
+	blank.dataRoot = "";
+	aws.dataRoot = "http://collectors-db.s3-website-us-west-1.amazonaws.com/";
 
 	var local = {};
 	local.dataRoot = dataRoot;
@@ -33,6 +33,7 @@
 		local: local,
 		contentType: contentType,
 		bucket: bucket,
-		sys_config: sys_config
+		sys_config: sys_config,
+		blank: blank
 	};
 })();

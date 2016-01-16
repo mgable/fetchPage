@@ -17,7 +17,6 @@
 		where = config.sys_config.system,
 		util = {};
 
-
 	function getDateString(d){
 		var date = d || today;
 		return date.getFullYear().toString() + pad(date.getMonth()+1) + pad(date.getDate());
@@ -31,9 +30,10 @@
 		return name + "_" + (fileOverwrite || getDateString()) + "." + suffix;
 	}
 
-	function getRawDataPath(name, fileOverwrite, location){
-		var location = location || where;
-		return config[location].dataRoot + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
+	function getRawDataPath(name, fileOverwrite, location, write){
+		var location = location || where,
+			root = config[location].dataRoot;
+		return  (!write ? root : "" ) + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
 	}
 
 	function getDiffPath(name, dateStr, location){
@@ -76,7 +76,6 @@
 	function makeLocalImagePath(dateStr, id, filename){
 		return makePathFromDateString(dateStr) + "/" + id + "/" + filename;
 	}
-
 
 	function getStoreFilePath(category, location){
 		var location = location || where;

@@ -13,8 +13,10 @@
 	make.string = makeString;
 
 	function parse(data){
-		var $ = cheerio.load(data);
-		return JSON.stringify($("a").map(function(a,b){return myMap(b);}).get());
+		var $ = cheerio.load(data),
+			results = $("a").map(function(a,b){return myMap(b);}).get(),
+			filteredResults = results.filter(function(item){ if (item){return item;}});
+		return JSON.stringify(filteredResults);
 	}
 
 	function myMap(data){
@@ -29,6 +31,10 @@
 			"formatted": getDate(obj.meta.date.replace(/^\-/,'').toLowerCase()),
 			"origin": obj.meta.date
 		};
+
+		if (!obj.src || !obj.title || !obj.link) {
+			return false;
+		}
 
 		return obj;
 	}
