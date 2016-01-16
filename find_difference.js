@@ -62,6 +62,7 @@
 	}
 
 	function getDataFromS3(){
+		 console.info(todayPath);
 		var todayPromise = util.fetchPage(util.makeOptions(todayPath)).then(parse),
 			yesterdayPromise = util.fetchPage(util.makeOptions(yesterdayPath)).then(parse),
 			storePromise = util.fetchPage(util.makeOptions(storeFile)).then(parse);
@@ -70,7 +71,6 @@
 			var today = data[0],
 				yesterday = data[1] || [],
 				store = data[2] || [];
-
 			fetchImages(diff(today, yesterday)).then(function(data){
 				save(store, data);
 			});
@@ -138,6 +138,7 @@
 			util.logger.log("new items:  " + data.length);
 			util.logger.log("wrote file " + diffFile);
 		} else {
+			console.info("TEST: " + storeFile);
 			console.info("************* Just Testing - nothing saved!! ****************");
 		}
 	}

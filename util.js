@@ -30,10 +30,14 @@
 		return name + "_" + (fileOverwrite || getDateString()) + "." + suffix;
 	}
 
-	function getRawDataPath(name, fileOverwrite, location, write){
+	function getRawDataPath(name, fileOverwrite, location){
 		var location = location || where,
 			root = config[location].dataRoot;
-		return  (!write ? root : "" ) + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
+		return  root + name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
+	}
+
+	function getRawDataPathWrite(name, fileOverwrite){
+		return name + rawDirectory  + makePathFromDateString(fileOverwrite || getDateString()) + "/";
 	}
 
 	function getDiffPath(name, dateStr, location){
@@ -188,6 +192,7 @@
 	util.getStoreFilePath = getStoreFilePath;
 	util.getImagePath = getImagePath;
 	util.getIndexPathAndFile = getIndexPathAndFile;
+	util.getRawDataPathWrite = getRawDataPathWrite;
 	util.getPageTemplate = getPageTemplate;
 	util.generateUID = generateUID;
 	util.fetchPage = fetchPage;

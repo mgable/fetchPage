@@ -31,7 +31,7 @@
 
 	function save(data){
 		var filename = util.getFileName(category, "json"),
-			path = util.getRawDataPath(category, "", "", true),
+			path = util.getRawDataPath(category),
 			file = path + filename;
 
 		if (!program.test){

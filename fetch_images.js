@@ -88,6 +88,9 @@ function fetchImages(dateStr, imagePath, items){
 		deferred = Q.defer();
 
 	if(downloadImages){util.makeDirectories(imagePath);}
+	console.info("xxxxxx");
+
+	console.info(imagePath);
 
 	items.forEach(function(item){
 		var src = {};
