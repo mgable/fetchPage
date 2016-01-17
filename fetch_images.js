@@ -16,6 +16,7 @@ function download(uri, imagePath, filename, callback){
 		request.head(uri, function(/*err, res, body*/){
 			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback).on('error', function(err){
 				util.logger.log(err, 'error');
+				callback();
 			});
 		});
 	} else {
