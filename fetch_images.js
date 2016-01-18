@@ -80,7 +80,8 @@ function getCompletedItemLink(data, link){
 		var $ = cheerio.load(data);
 		return $("a:contains('See original listing')")[0].attribs.href;
 	}catch(e){
-		util.logger.log("fetch image ERROR: " + link, 'error');
+		util.logger.log("fetch page ERROR: " + link, 'error');
+		return false;
 	}
 }
 
@@ -89,9 +90,7 @@ function fetchImages(dateStr, imagePath, items){
 		deferred = Q.defer();
 
 	if(downloadImages){util.makeDirectories(imagePath);}
-	console.info("xxxxxx");
 
-	console.info(imagePath);
 
 	items.forEach(function(item){
 		var src = {};

@@ -7,7 +7,7 @@
 		parser = require('./parser.js'),
 		category = config.category.name;
 
-	util.logger.log("fetching: " + util.getPageTemplate(config.category.id));
+	
 
 	var options = {
 		host: config.domain,
@@ -21,8 +21,11 @@
 		.option('-t, --test', 'testing')
 		.parse(process.argv);
 
-	// the meat of the matter
-	util.fetchPage(options).then(function(data){_process(data);});
+	function init(){
+		util.logger.log("fetching: " + util.getPageTemplate(config.category.id));
+		// the meat of the matter
+		util.fetchPage(options).then(function(data){_process(data);});
+	}
 
 	function _process(data){
 		var document = parser.parse(data);
@@ -41,4 +44,6 @@
 			console.info("************* Just Testing - nothing saved!! ****************");
 		}
 	}
+
+	init();
 })();

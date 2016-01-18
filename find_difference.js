@@ -32,6 +32,9 @@
 		todayPath = rawDataPath + util.getFileName(category, "json", dateStr),
 		yesterdayPath = getYesterdayFileName(dateStr);
 
+
+	util.logger.log("generating diffs: " + util.getPageTemplate(config.category.id));
+
 	getData(where);
 
 	function getData(location){

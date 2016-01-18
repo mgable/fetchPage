@@ -2,6 +2,7 @@
 (function(){
 	var cheerio = require('cheerio'),
 		util = require('./util.js'),
+		config = require('./config.js'),
 		parser = {},
 		make = {};
 
@@ -13,6 +14,8 @@
 	make.string = makeString;
 
 	function parse(data){
+		util.logger.log("fetching: " + util.getPageTemplate(config.category.id));
+
 		var $ = cheerio.load(data),
 			results = $("a").map(function(a,b){return myMap(b);}).get(),
 			filteredResults = results.filter(function(item){ if (item){return item;}});
