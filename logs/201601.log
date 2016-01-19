@@ -1,0 +1,665 @@
+{"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T21:31:37.433Z"}
+{"level":"info","message":"fetching: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T21:31:38.142Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/raw/2016/01/18/advertising_tins_20160118.json","timestamp":"2016-01-18T21:31:38.232Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T21:31:39.682Z"}
+{"level":"info","message":"There are 151 new items added for 20160118","timestamp":"2016-01-18T21:31:39.839Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T21:42:44.214Z"}
+{"level":"info","message":"There are 151 new items added for 20160118","timestamp":"2016-01-18T21:42:44.307Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381516305100","timestamp":"2016-01-18T21:43:10.425Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/371517818242","timestamp":"2016-01-18T21:43:10.545Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T22:17:35.492Z"}
+{"level":"info","message":"There are 151 new items added for 20160118","timestamp":"2016-01-18T22:17:35.588Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T22:21:07.535Z"}
+{"level":"info","message":"There are 151 new items added for 20160118","timestamp":"2016-01-18T22:21:07.629Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T22:28:56.321Z"}
+{"level":"info","message":"There are 151 new items added for 20160118","timestamp":"2016-01-18T22:28:56.491Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T22:33:53.333Z"}
+{"level":"info","message":"There are 151 new items added for 20160118","timestamp":"2016-01-18T22:33:53.428Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-18T22:34:24.689Z"}
+{"level":"info","message":"total items: 2849","timestamp":"2016-01-18T22:34:24.690Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-18T22:34:24.691Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T22:34:24.773Z"}
+{"level":"info","message":"new items:  151","timestamp":"2016-01-18T22:34:24.773Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T22:34:24.773Z"}
+{"level":"info","message":"saving bulk import file: /Users/markgable/Sites/data/collectorsDB/advertising_tins/to_be_indexed/advertising_tins.formatted.json","timestamp":"2016-01-18T22:35:15.900Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:03:31.503Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:03:31.580Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-18T23:03:33.594Z"}
+{"level":"info","message":"total items: 2850","timestamp":"2016-01-18T23:03:33.594Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/store/advertising_tins.json","timestamp":"2016-01-18T23:03:33.594Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:03:33.596Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:03:33.596Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:03:33.596Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:06:00.951Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:06:00.955Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:06:02.811Z"}
+{"level":"info","message":"total items: 1","timestamp":"2016-01-18T23:06:02.811Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:06:02.812Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:06:02.812Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:06:02.812Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:06:02.812Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:06:11.923Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:06:11.926Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:06:13.836Z"}
+{"level":"info","message":"total items: 2","timestamp":"2016-01-18T23:06:13.836Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:06:13.836Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:06:13.837Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:06:13.837Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:06:13.838Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:08:05.344Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:08:05.348Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:08:07.136Z"}
+{"level":"info","message":"total items: 3","timestamp":"2016-01-18T23:08:07.136Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:08:07.136Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:08:07.137Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:08:07.137Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:08:07.138Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:12:25.412Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:12:25.417Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:12:27.697Z"}
+{"level":"info","message":"total items: 4","timestamp":"2016-01-18T23:12:27.698Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:12:27.698Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:12:27.699Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:12:27.699Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:12:27.699Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:12:31.826Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:12:31.830Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:12:33.828Z"}
+{"level":"info","message":"total items: 5","timestamp":"2016-01-18T23:12:33.828Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:12:33.828Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:12:33.829Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:12:33.829Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:12:33.830Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:12:39.024Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:12:39.028Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:12:40.912Z"}
+{"level":"info","message":"total items: 6","timestamp":"2016-01-18T23:12:40.912Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:12:40.912Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:12:40.913Z"}
+{"level":"info","message":"new items:  1","timestamp":"2016-01-18T23:12:40.913Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:12:40.913Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:15:29.470Z"}
+{"level":"info","message":"There are 1 new items added for 20160118","timestamp":"2016-01-18T23:15:29.474Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxx.com/itm/131693642023","timestamp":"2016-01-18T23:15:31.991Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:16:43.129Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:16:43.133Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:16:43.487Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:19:39.153Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:19:39.157Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:19:39.382Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:24:44.904Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:24:44.908Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:24:45.190Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:24:46.822Z"}
+{"level":"info","message":"total items: 9","timestamp":"2016-01-18T23:24:46.822Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:24:46.823Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:24:46.823Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:24:46.824Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:24:46.824Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:24:51.398Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:24:51.401Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:26:21.862Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:26:21.867Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:26:22.062Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:23.567Z"}
+{"level":"info","message":"total items: 12","timestamp":"2016-01-18T23:26:23.567Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:23.568Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:23.568Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:26:23.569Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:23.569Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:26:47.705Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:26:47.708Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:26:48.221Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:49.771Z"}
+{"level":"info","message":"total items: 15","timestamp":"2016-01-18T23:26:49.772Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:49.772Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:49.773Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:26:49.773Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:49.773Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:26:53.245Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:26:53.249Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:26:53.433Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:55.159Z"}
+{"level":"info","message":"total items: 18","timestamp":"2016-01-18T23:26:55.159Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:55.159Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:55.160Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:26:55.160Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:55.160Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:26:57.750Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:26:57.754Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:26:58.612Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:59.824Z"}
+{"level":"info","message":"total items: 21","timestamp":"2016-01-18T23:26:59.824Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:26:59.825Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:59.825Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:26:59.826Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:26:59.826Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:27:02.706Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:27:02.710Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:27:03.030Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:27:04.706Z"}
+{"level":"info","message":"total items: 24","timestamp":"2016-01-18T23:27:04.706Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:27:04.706Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:27:04.707Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:27:04.708Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:27:04.708Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:27:06.988Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:27:06.992Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:27:07.250Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:27:09.056Z"}
+{"level":"info","message":"total items: 27","timestamp":"2016-01-18T23:27:09.056Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:27:09.056Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:27:09.057Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:27:09.057Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:27:09.058Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:29:46.629Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:29:46.641Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:29:46.851Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:29:51.330Z"}
+{"level":"info","message":"total items: 30","timestamp":"2016-01-18T23:29:51.330Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:29:51.330Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:29:51.331Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:29:51.331Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:29:51.331Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:34:05.819Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:34:05.823Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:34:06.021Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:34:07.620Z"}
+{"level":"info","message":"total items: 33","timestamp":"2016-01-18T23:34:07.620Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:34:07.620Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:34:07.621Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:34:07.621Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:34:07.621Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:36:56.318Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:36:56.323Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:36:56.648Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:36:58.132Z"}
+{"level":"info","message":"total items: 36","timestamp":"2016-01-18T23:36:58.133Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:36:58.133Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:36:58.134Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:36:58.134Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:36:58.134Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:42:48.313Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:42:48.328Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:42:48.731Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:42:50.465Z"}
+{"level":"info","message":"total items: 39","timestamp":"2016-01-18T23:42:50.466Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:42:50.466Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:42:50.467Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:42:50.467Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:42:50.467Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:44:42.607Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:44:42.612Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:44:43.146Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:44:44.372Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:44:44.570Z"}
+{"level":"info","message":"total items: 42","timestamp":"2016-01-18T23:44:44.570Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:44:44.570Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:44:44.571Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:44:44.571Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:44:44.571Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:44:44.576Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:48:36.886Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:48:36.921Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:48:37.120Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:48:39.074Z"}
+{"level":"info","message":"total items: 45","timestamp":"2016-01-18T23:48:39.075Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:48:39.075Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:48:39.076Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:48:39.076Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:48:39.076Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:48:39.077Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:48:39.081Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:55:12.661Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:55:12.665Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:55:13.063Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:14.462Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:55:14.606Z"}
+{"level":"info","message":"total items: 48","timestamp":"2016-01-18T23:55:14.606Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:55:14.606Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:55:14.607Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:55:14.607Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:55:14.607Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:14.612Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:55:23.184Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:55:23.189Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:25.127Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:25.131Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-18T23:55:29.907Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:55:47.280Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:55:47.283Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:55:47.461Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:49.001Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:55:49.036Z"}
+{"level":"info","message":"total items: 51","timestamp":"2016-01-18T23:55:49.037Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:55:49.037Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:55:49.038Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:55:49.038Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:55:49.038Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:49.042Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:55:56.769Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:55:56.774Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:55:56.925Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:58.425Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:55:58.456Z"}
+{"level":"info","message":"total items: 54","timestamp":"2016-01-18T23:55:58.456Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:55:58.457Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:55:58.457Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:55:58.458Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:55:58.458Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:55:58.465Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:56:06.098Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:56:06.102Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:56:06.392Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:56:07.823Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:56:08.091Z"}
+{"level":"info","message":"total items: 57","timestamp":"2016-01-18T23:56:08.091Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:56:08.091Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:56:08.092Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:56:08.092Z"}
+{"level":"info","message":"wrote file /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:56:08.092Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:56:08.095Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:56:54.019Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:56:54.023Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:56:54.246Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:56:55.757Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:56:55.885Z"}
+{"level":"info","message":"total items: 60","timestamp":"2016-01-18T23:56:55.885Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:56:55.886Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:56:55.886Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:56:55.892Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:57:50.595Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:57:50.599Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:57:50.802Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:57:52.383Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:57:52.513Z"}
+{"level":"info","message":"total items: 63","timestamp":"2016-01-18T23:57:52.513Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:57:52.514Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:57:52.515Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:57:52.523Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:57:59.354Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:57:59.358Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:58:01.107Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:58:01.147Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:58:54.637Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:58:54.640Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:58:54.867Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:58:56.268Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:58:56.421Z"}
+{"level":"info","message":"total items: 66","timestamp":"2016-01-18T23:58:56.421Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:58:56.422Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:58:56.422Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:58:56.428Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:59:27.516Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:59:27.520Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-18T23:59:27.707Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-18T23:59:29.321Z"}
+{"level":"info","message":"total items: 69","timestamp":"2016-01-18T23:59:29.321Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-18T23:59:29.322Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-18T23:59:29.322Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:59:29.323Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:59:29.327Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-18T23:59:33.118Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-18T23:59:33.122Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:59:34.767Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-18T23:59:34.889Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:00:04.024Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-19T00:00:04.029Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-19T00:00:04.294Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:05.873Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-19T00:00:05.916Z"}
+{"level":"info","message":"total items: 72","timestamp":"2016-01-19T00:00:05.916Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-19T00:00:05.917Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-19T00:00:05.917Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:05.922Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:00:10.728Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-19T00:00:10.732Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-19T00:00:10.918Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:12.463Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-19T00:00:13.429Z"}
+{"level":"info","message":"total items: 75","timestamp":"2016-01-19T00:00:13.429Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-19T00:00:13.430Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-19T00:00:13.430Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:13.434Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:00:19.596Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-19T00:00:19.600Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-19T00:00:19.896Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:21.667Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-19T00:00:21.730Z"}
+{"level":"info","message":"total items: 78","timestamp":"2016-01-19T00:00:21.730Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-19T00:00:21.731Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-19T00:00:21.731Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:21.739Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:00:29.234Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-19T00:00:29.238Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-19T00:00:29.410Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:30.801Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-19T00:00:31.113Z"}
+{"level":"info","message":"total items: 81","timestamp":"2016-01-19T00:00:31.114Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-19T00:00:31.116Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-19T00:00:31.116Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:31.119Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:00:37.199Z"}
+{"level":"info","message":"There are 3 new items added for 20160118","timestamp":"2016-01-19T00:00:37.203Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebayxxxx.com/itm/262227989369","timestamp":"2016-01-19T00:00:37.384Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:38.940Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/advertising_tins.json","timestamp":"2016-01-19T00:00:43.998Z"}
+{"level":"info","message":"total items: 84","timestamp":"2016-01-19T00:00:43.998Z"}
+{"level":"info","message":"saving - local: /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-diffs/2016/01/18/advertising_tins.json","timestamp":"2016-01-19T00:00:43.999Z"}
+{"level":"info","message":"new items:  3","timestamp":"2016-01-19T00:00:43.999Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimgXXXXXXXX.com/images/g/QtwAAOSwoydWksQ4/s-l400.jpg","timestamp":"2016-01-19T00:00:44.002Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:03:17.625Z"}
+{"level":"info","message":"There are 541 new items added for 20160118","timestamp":"2016-01-19T00:03:17.659Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/361462667581","timestamp":"2016-01-19T00:03:45.464Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231810088507","timestamp":"2016-01-19T00:03:45.466Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/291654506922","timestamp":"2016-01-19T00:03:45.467Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/221986958004","timestamp":"2016-01-19T00:03:45.468Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161941954177","timestamp":"2016-01-19T00:03:45.469Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/391361244963","timestamp":"2016-01-19T00:03:45.470Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141870735976","timestamp":"2016-01-19T00:03:45.471Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111869368822","timestamp":"2016-01-19T00:03:45.472Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:45.551Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:45.552Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191779666141","timestamp":"2016-01-19T00:03:45.562Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252239012581","timestamp":"2016-01-19T00:03:45.564Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321967385985","timestamp":"2016-01-19T00:03:45.583Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161939284054","timestamp":"2016-01-19T00:03:45.586Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151939069221","timestamp":"2016-01-19T00:03:45.628Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381516160376","timestamp":"2016-01-19T00:03:45.649Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331748991223","timestamp":"2016-01-19T00:03:45.676Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191775787285","timestamp":"2016-01-19T00:03:45.742Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151944977679","timestamp":"2016-01-19T00:03:45.760Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191779663757","timestamp":"2016-01-19T00:03:45.762Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161943369478","timestamp":"2016-01-19T00:03:46.045Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201498299867","timestamp":"2016-01-19T00:03:46.272Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:47.224Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281902107900","timestamp":"2016-01-19T00:03:47.249Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121857473047","timestamp":"2016-01-19T00:03:47.250Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:47.613Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:47.742Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:47.746Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:47.787Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:48.077Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:49.057Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201499595657","timestamp":"2016-01-19T00:03:52.173Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252242944018","timestamp":"2016-01-19T00:03:52.367Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281904753286","timestamp":"2016-01-19T00:03:52.368Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/351622239701","timestamp":"2016-01-19T00:03:53.512Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151945907549","timestamp":"2016-01-19T00:03:53.514Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231805663817","timestamp":"2016-01-19T00:03:53.536Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231807981199","timestamp":"2016-01-19T00:03:54.193Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/371516294804","timestamp":"2016-01-19T00:03:55.147Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151939975494","timestamp":"2016-01-19T00:03:55.297Z"}
+{"code":"ECONNRESET","errno":"ECONNRESET","syscall":"read","level":"error","timestamp":"2016-01-19T00:03:57.517Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321970645774","timestamp":"2016-01-19T00:04:03.620Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/elsAAOSwYIhWksF1/s-l400.jpg","timestamp":"2016-01-19T00:04:35.846Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/Lz4AAOSwT~9Wkr1E/s-l400.jpg","timestamp":"2016-01-19T00:04:36.619Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/rq8AAOSw5dNWkrt7/s-l400.jpg","timestamp":"2016-01-19T00:04:36.619Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/kjIAAOSwHnFVtstc/s-l400.jpg","timestamp":"2016-01-19T00:04:36.625Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/xMsAAOSwT~9Wixii/s-l400.jpg","timestamp":"2016-01-19T00:04:36.652Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/Qo8AAOSwoydWkrta/s-l400.jpg","timestamp":"2016-01-19T00:04:36.654Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/H3gAAOSwwPhWkr0v/s-l400.jpg","timestamp":"2016-01-19T00:04:36.655Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/EqIAAOSwJkJWkojF/s-l400.jpg","timestamp":"2016-01-19T00:04:36.656Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/9GgAAOSwGotWkr1l/s-l400.jpg","timestamp":"2016-01-19T00:04:36.658Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/r6MAAOSw5dNWkruC/s-l400.jpg","timestamp":"2016-01-19T00:04:36.866Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/ILsAAOSwKtlWixii/s-l400.jpg","timestamp":"2016-01-19T00:04:36.877Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/B7wAAOSwLN5Wixii/s-l400.jpg","timestamp":"2016-01-19T00:04:36.878Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/NQ8AAOSwX~dWkr8x/s-l400.jpg","timestamp":"2016-01-19T00:04:36.882Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/sBUAAOSwHaBWjbFA/s-l400.jpg","timestamp":"2016-01-19T00:04:36.902Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/ru8AAOSwZG9Wkoh1/s-l400.jpg","timestamp":"2016-01-19T00:04:36.904Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/gV8AAOSwHaBWlDfn/s-l400.jpg","timestamp":"2016-01-19T00:04:36.906Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/wVIAAOSwoydWkDXN/s-l400.jpg","timestamp":"2016-01-19T00:04:36.907Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/LEcAAOSwoydWlDfp/s-l400.jpg","timestamp":"2016-01-19T00:04:36.911Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/0GwAAOSwaA5WkrN1/s-l400.jpg","timestamp":"2016-01-19T00:04:36.914Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/RJwAAOSwoydWkrtp/s-l400.jpg","timestamp":"2016-01-19T00:04:36.918Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/8qIAAOSw5dNWkr14/s-l400.jpg","timestamp":"2016-01-19T00:04:36.920Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/d~YAAOSwZG9WkDWu/s-l400.jpg","timestamp":"2016-01-19T00:04:36.923Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/HDQAAOSwYIhWjZG-/s-l400.jpg","timestamp":"2016-01-19T00:04:36.946Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/zW4AAOSwT~9WkojU/s-l400.jpg","timestamp":"2016-01-19T00:04:36.948Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/Nf8AAOSwwPhWjdRD/s-l400.jpg","timestamp":"2016-01-19T00:04:37.110Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/QewAAOSwJkJWjZGt/s-l400.jpg","timestamp":"2016-01-19T00:04:37.111Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/OjsAAOSwbdpWU3L3/s-l400.jpg","timestamp":"2016-01-19T00:04:37.115Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/PH4AAOSwSHZWeJtw/s-l400.jpg","timestamp":"2016-01-19T00:04:37.120Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/xJkAAOSwwPhWk8TZ/s-l400.jpg","timestamp":"2016-01-19T00:04:37.194Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/034AAOSw9N1VtsuH/s-l400.jpg","timestamp":"2016-01-19T00:04:37.194Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/LfAAAOSwHaBWkr2L/s-l400.jpg","timestamp":"2016-01-19T00:04:37.194Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/vAkAAOSwX~dWkrOp/s-l400.jpg","timestamp":"2016-01-19T00:04:37.207Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/1kcAAOSwaA5WkrOh/s-l400.jpg","timestamp":"2016-01-19T00:04:37.210Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/C50AAOSwT~9WlDf3/s-l400.jpg","timestamp":"2016-01-19T00:04:37.432Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/EKoAAOSwJkJWkoi3/s-l400.jpg","timestamp":"2016-01-19T00:04:37.438Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/wakAAOSwX~dWjdUH/s-l400.jpg","timestamp":"2016-01-19T00:04:37.488Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/Q400AAOSwhkRWeJt5/s-l64.jpg","timestamp":"2016-01-19T00:04:37.494Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/LhAAAOSwa-dWkrtQ/s-l400.jpg","timestamp":"2016-01-19T00:04:37.496Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/2l8AAOSwGotWkrOJ/s-l400.jpg","timestamp":"2016-01-19T00:04:37.644Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/yRcAAOSwnipWU3MC/s-l400.jpg","timestamp":"2016-01-19T00:04:37.768Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/FX4AAOSwoydWkTUg/s-l400.jpg","timestamp":"2016-01-19T00:04:38.368Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/zV0AAOSwYIhWkTUl/s-l400.jpg","timestamp":"2016-01-19T00:04:38.492Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/YE8AAOSw14xWNkHG/s-l400.jpg","timestamp":"2016-01-19T00:04:39.052Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/zJ4AAOSwJkJWkTUb/s-l400.jpg","timestamp":"2016-01-19T00:04:39.477Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/JCkAAOSwGotWkr8k/s-l400.jpg","timestamp":"2016-01-19T00:04:39.918Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:10:10.497Z"}
+{"level":"info","message":"There are 541 new items added for 20160118","timestamp":"2016-01-19T00:10:10.531Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131693642023","timestamp":"2016-01-19T00:10:36.975Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141869036976","timestamp":"2016-01-19T00:10:36.978Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331751314197","timestamp":"2016-01-19T00:10:36.982Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321957474100","timestamp":"2016-01-19T00:10:36.984Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281902985889","timestamp":"2016-01-19T00:10:36.987Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121862124864","timestamp":"2016-01-19T00:10:36.988Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161943456149","timestamp":"2016-01-19T00:10:36.989Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281905918689","timestamp":"2016-01-19T00:10:36.990Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281904408792","timestamp":"2016-01-19T00:10:36.992Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161937659877","timestamp":"2016-01-19T00:10:36.993Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201499593168","timestamp":"2016-01-19T00:10:36.994Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121857737092","timestamp":"2016-01-19T00:10:36.997Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262230698247","timestamp":"2016-01-19T00:10:36.998Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121861090974","timestamp":"2016-01-19T00:10:36.999Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331751475894","timestamp":"2016-01-19T00:10:37.000Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121856859495","timestamp":"2016-01-19T00:10:37.002Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111870099117","timestamp":"2016-01-19T00:10:37.003Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281902991182","timestamp":"2016-01-19T00:10:37.004Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172053400253","timestamp":"2016-01-19T00:10:37.007Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111868693253","timestamp":"2016-01-19T00:10:37.008Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141868998796","timestamp":"2016-01-19T00:10:37.009Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/311518547743","timestamp":"2016-01-19T00:10:37.024Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252244103360","timestamp":"2016-01-19T00:10:37.026Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/272093571434","timestamp":"2016-01-19T00:10:37.028Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331751477640","timestamp":"2016-01-19T00:10:37.031Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231803510930","timestamp":"2016-01-19T00:10:37.032Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301843932893","timestamp":"2016-01-19T00:10:37.041Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262232570463","timestamp":"2016-01-19T00:10:37.042Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201500753390","timestamp":"2016-01-19T00:10:37.044Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231805164891","timestamp":"2016-01-19T00:10:37.045Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191779661668","timestamp":"2016-01-19T00:10:37.046Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/291655978768","timestamp":"2016-01-19T00:10:37.058Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141868982305","timestamp":"2016-01-19T00:10:37.080Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252240059996","timestamp":"2016-01-19T00:10:37.083Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172058937249","timestamp":"2016-01-19T00:10:37.084Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321973531941","timestamp":"2016-01-19T00:10:37.085Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281902107900","timestamp":"2016-01-19T00:10:37.088Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/272096525864","timestamp":"2016-01-19T00:10:37.090Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381516256774","timestamp":"2016-01-19T00:10:37.092Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321969753655","timestamp":"2016-01-19T00:10:37.094Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/311523082628","timestamp":"2016-01-19T00:10:37.097Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321966177707","timestamp":"2016-01-19T00:10:37.098Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121862123828","timestamp":"2016-01-19T00:10:37.111Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262232661575","timestamp":"2016-01-19T00:10:37.115Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201500914241","timestamp":"2016-01-19T00:10:37.119Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/311519712958","timestamp":"2016-01-19T00:10:37.120Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/291655988593","timestamp":"2016-01-19T00:10:37.121Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/221982420692","timestamp":"2016-01-19T00:10:37.137Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201497170433","timestamp":"2016-01-19T00:10:37.139Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/221988925170","timestamp":"2016-01-19T00:10:37.164Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262223214638","timestamp":"2016-01-19T00:10:37.167Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131697234951","timestamp":"2016-01-19T00:10:37.692Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191779663757","timestamp":"2016-01-19T00:10:37.693Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121860080665","timestamp":"2016-01-19T00:10:37.694Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281904253693","timestamp":"2016-01-19T00:10:37.695Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191777433581","timestamp":"2016-01-19T00:10:37.697Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111870799602","timestamp":"2016-01-19T00:10:37.698Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121862118794","timestamp":"2016-01-19T00:10:37.699Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/181988555341","timestamp":"2016-01-19T00:10:37.700Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/221988003432","timestamp":"2016-01-19T00:10:38.113Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321973433076","timestamp":"2016-01-19T00:10:38.511Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172057595928","timestamp":"2016-01-19T00:10:38.512Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252244118033","timestamp":"2016-01-19T00:10:38.679Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131689838098","timestamp":"2016-01-19T00:10:38.681Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321972722690","timestamp":"2016-01-19T00:10:38.813Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252244358498","timestamp":"2016-01-19T00:10:38.819Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/291653646432","timestamp":"2016-01-19T00:10:38.820Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321968027805","timestamp":"2016-01-19T00:10:38.822Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172049237886","timestamp":"2016-01-19T00:10:38.824Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161940068206","timestamp":"2016-01-19T00:10:38.919Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381516305100","timestamp":"2016-01-19T00:10:38.946Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381511017768","timestamp":"2016-01-19T00:10:38.948Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301840303651","timestamp":"2016-01-19T00:10:38.949Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252239012581","timestamp":"2016-01-19T00:10:38.951Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121861668353","timestamp":"2016-01-19T00:10:38.956Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/391357531794","timestamp":"2016-01-19T00:10:38.958Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/221986688404","timestamp":"2016-01-19T00:10:38.960Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301841181508","timestamp":"2016-01-19T00:10:38.962Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151944727756","timestamp":"2016-01-19T00:10:38.963Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141875290257","timestamp":"2016-01-19T00:10:38.964Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151939909378","timestamp":"2016-01-19T00:10:38.965Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/311523033443","timestamp":"2016-01-19T00:10:38.969Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301843497655","timestamp":"2016-01-19T00:10:38.972Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/181982697102","timestamp":"2016-01-19T00:10:38.975Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131693759425","timestamp":"2016-01-19T00:10:38.992Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151940246752","timestamp":"2016-01-19T00:10:38.993Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121862117325","timestamp":"2016-01-19T00:10:38.994Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141873387709","timestamp":"2016-01-19T00:10:39.029Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161944052323","timestamp":"2016-01-19T00:10:39.038Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301841220048","timestamp":"2016-01-19T00:10:39.040Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161939284054","timestamp":"2016-01-19T00:10:39.043Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/291651181877","timestamp":"2016-01-19T00:10:39.044Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111868130152","timestamp":"2016-01-19T00:10:39.046Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/272101156715","timestamp":"2016-01-19T00:10:39.047Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172049070215","timestamp":"2016-01-19T00:10:39.048Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201499233828","timestamp":"2016-01-19T00:10:39.051Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231807981199","timestamp":"2016-01-19T00:10:39.054Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252241511985","timestamp":"2016-01-19T00:10:39.072Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/231805659593","timestamp":"2016-01-19T00:10:39.074Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281903450632","timestamp":"2016-01-19T00:10:39.095Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161942046056","timestamp":"2016-01-19T00:10:39.099Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262232799942","timestamp":"2016-01-19T00:10:39.110Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191779658420","timestamp":"2016-01-19T00:10:39.124Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262234076715","timestamp":"2016-01-19T00:10:39.125Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281902804600","timestamp":"2016-01-19T00:10:39.130Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201495523605","timestamp":"2016-01-19T00:10:39.132Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252244140352","timestamp":"2016-01-19T00:10:39.134Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172057311273","timestamp":"2016-01-19T00:10:39.136Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321972389070","timestamp":"2016-01-19T00:10:39.138Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151939975494","timestamp":"2016-01-19T00:10:39.139Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/361465712375","timestamp":"2016-01-19T00:10:39.141Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161938132413","timestamp":"2016-01-19T00:10:39.143Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331751392275","timestamp":"2016-01-19T00:10:39.147Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281903516884","timestamp":"2016-01-19T00:10:39.149Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151940284988","timestamp":"2016-01-19T00:10:39.150Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252240626949","timestamp":"2016-01-19T00:10:39.155Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331748991223","timestamp":"2016-01-19T00:10:39.156Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381514678854","timestamp":"2016-01-19T00:10:39.160Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131691879809","timestamp":"2016-01-19T00:10:39.162Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172056771469","timestamp":"2016-01-19T00:10:39.163Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151945031398","timestamp":"2016-01-19T00:10:39.175Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/331748520058","timestamp":"2016-01-19T00:10:39.246Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191775115508","timestamp":"2016-01-19T00:10:39.249Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111867987158","timestamp":"2016-01-19T00:10:39.259Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161943369478","timestamp":"2016-01-19T00:10:39.303Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/351623782584","timestamp":"2016-01-19T00:10:39.306Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281905144977","timestamp":"2016-01-19T00:10:39.311Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161938269263","timestamp":"2016-01-19T00:10:39.319Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201498477239","timestamp":"2016-01-19T00:10:39.322Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281901973495","timestamp":"2016-01-19T00:10:39.366Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191776576337","timestamp":"2016-01-19T00:10:39.368Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201498925474","timestamp":"2016-01-19T00:10:39.395Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161939539563","timestamp":"2016-01-19T00:10:39.397Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281906581032","timestamp":"2016-01-19T00:10:39.398Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121862193544","timestamp":"2016-01-19T00:10:39.399Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/181986252502","timestamp":"2016-01-19T00:10:39.400Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/272101353516","timestamp":"2016-01-19T00:10:39.401Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141869197239","timestamp":"2016-01-19T00:10:39.402Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151943079285","timestamp":"2016-01-19T00:10:39.403Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/291654506922","timestamp":"2016-01-19T00:10:39.404Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111866450560","timestamp":"2016-01-19T00:10:39.405Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/351620550917","timestamp":"2016-01-19T00:10:39.409Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111870116734","timestamp":"2016-01-19T00:10:39.414Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/181982550077","timestamp":"2016-01-19T00:10:39.420Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281905235093","timestamp":"2016-01-19T00:10:39.421Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262231203423","timestamp":"2016-01-19T00:10:39.431Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172052297437","timestamp":"2016-01-19T00:10:39.433Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/141873360265","timestamp":"2016-01-19T00:10:39.445Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/371527482797","timestamp":"2016-01-19T00:10:39.457Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/161940261288","timestamp":"2016-01-19T00:10:39.465Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/371524561385","timestamp":"2016-01-19T00:10:39.468Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/121860432335","timestamp":"2016-01-19T00:10:39.472Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131692998656","timestamp":"2016-01-19T00:10:39.473Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381516161941","timestamp":"2016-01-19T00:10:39.474Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252240633046","timestamp":"2016-01-19T00:10:39.476Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/361465201415","timestamp":"2016-01-19T00:10:39.477Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131693107563","timestamp":"2016-01-19T00:10:39.481Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/111866202259","timestamp":"2016-01-19T00:10:39.482Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/181985542132","timestamp":"2016-01-19T00:10:39.484Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262230400528","timestamp":"2016-01-19T00:11:02.026Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151940288602","timestamp":"2016-01-19T00:11:13.528Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172053113158","timestamp":"2016-01-19T00:11:13.536Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/361462423749","timestamp":"2016-01-19T00:11:13.538Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262226399091","timestamp":"2016-01-19T00:11:13.820Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281901414983","timestamp":"2016-01-19T00:11:13.946Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/381516198752","timestamp":"2016-01-19T00:11:13.947Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151939633231","timestamp":"2016-01-19T00:11:13.948Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252245607274","timestamp":"2016-01-19T00:11:13.969Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/252243391331","timestamp":"2016-01-19T00:11:13.971Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/191776581296","timestamp":"2016-01-19T00:11:13.988Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/201499595657","timestamp":"2016-01-19T00:11:13.989Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/221988023578","timestamp":"2016-01-19T00:11:14.000Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/131699400954","timestamp":"2016-01-19T00:11:14.035Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/262224715286","timestamp":"2016-01-19T00:11:14.036Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/391362734861","timestamp":"2016-01-19T00:11:14.037Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/172056591820","timestamp":"2016-01-19T00:11:14.075Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301844997954","timestamp":"2016-01-19T00:11:14.560Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/151939420592","timestamp":"2016-01-19T00:11:29.338Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/321970497112","timestamp":"2016-01-19T00:11:29.486Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/301844452157","timestamp":"2016-01-19T00:11:30.077Z"}
+{"level":"error","message":"fetch page ERROR: http://rover.ebay.com/rover/1/711-53200-19255-0/1?campid=5336393622&toolid=10013&customId=advertising/tins&mpre=http://www.ebay.com/itm/281902087268","timestamp":"2016-01-19T00:11:30.137Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:14:35.519Z"}
+{"level":"info","message":"There are 132 new items added for 20160118","timestamp":"2016-01-19T00:14:35.524Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/FfIAAOSwJkJWkV08/s-l400.jpg","timestamp":"2016-01-19T00:15:18.066Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/KVgAAOSwgQ9Vtst3/s-l400.jpg","timestamp":"2016-01-19T00:15:18.593Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/OFYAAOSwZG9Wixii/s-l400.jpg","timestamp":"2016-01-19T00:15:21.618Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/rTIAAOSwYIhWjGx7/s-l400.jpg","timestamp":"2016-01-19T00:15:21.657Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/SvYAAOSwHaBWka1F/s-l400.jpg","timestamp":"2016-01-19T00:15:21.666Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/ECoAAOSwKtlWjDgt/s-l400.jpg","timestamp":"2016-01-19T00:15:26.066Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/NQ8AAOSwX~dWkr8x/s-l400.jpg","timestamp":"2016-01-19T00:15:26.094Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/q9gAAOSwKtlWkr8e/s-l400.jpg","timestamp":"2016-01-19T00:15:26.099Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/mIQAAOSwT~9Wjq1j/s-l400.jpg","timestamp":"2016-01-19T00:15:28.183Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/MEcAAOSwZG9WjaK0/s-l400.jpg","timestamp":"2016-01-19T00:15:28.188Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/M3kAAOSwJkJWjFb9/s-l400.jpg","timestamp":"2016-01-19T00:15:28.954Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/tXQAAOSwa-dWjIf2/s-l400.jpg","timestamp":"2016-01-19T00:15:29.463Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/vboAAOSwL7VWj~Br/s-l400.jpg","timestamp":"2016-01-19T00:15:29.699Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/mokAAOSw5dNWj~Bv/s-l400.jpg","timestamp":"2016-01-19T00:15:29.704Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/MfoAAOSwZG9Wivwg/s-l400.jpg","timestamp":"2016-01-19T00:15:30.110Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/ymkAAOSwZG9Wl~-V/s-l400.jpg","timestamp":"2016-01-19T00:15:30.336Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/oN8AAOSwLN5WkT9F/s-l400.jpg","timestamp":"2016-01-19T00:15:30.844Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/FNkAAOSwoydWkTUY/s-l400.jpg","timestamp":"2016-01-19T00:15:31.797Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/MzIAAOSwT~9WjsJN/s-l400.jpg","timestamp":"2016-01-19T00:16:13.714Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/kToAAOSwHnFVtstT/s-l400.jpg","timestamp":"2016-01-19T00:16:24.320Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:17:59.387Z"}
+{"level":"info","message":"There are 132 new items added for 20160118","timestamp":"2016-01-19T00:17:59.394Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/J8UAAOSwpRRWmRBD/s-l400.jpg","timestamp":"2016-01-19T00:18:33.427Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/lJQAAOSwL7VWkuX2/s-l400.jpg","timestamp":"2016-01-19T00:18:40.472Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/DW0AAOSwX~dWkDJV/s-l400.jpg","timestamp":"2016-01-19T00:18:40.491Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/fOIAAOSwYIhWkwgE/s-l400.jpg","timestamp":"2016-01-19T00:18:40.567Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/034AAOSw9N1VtsuH/s-l400.jpg","timestamp":"2016-01-19T00:18:40.568Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/ENkAAOSwJkJWhdLQ/s-l400.jpg","timestamp":"2016-01-19T00:18:40.725Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/6IoAAOSwT~9WkDI6/s-l400.jpg","timestamp":"2016-01-19T00:18:40.899Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/KVgAAOSwgQ9Vtst3/s-l400.jpg","timestamp":"2016-01-19T00:18:40.900Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/7K0AAOSwZG9WkpNH/s-l400.jpg","timestamp":"2016-01-19T00:18:40.902Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/AaQAAOSwwPhWkpOL/s-l400.jpg","timestamp":"2016-01-19T00:18:40.907Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/kjIAAOSwHnFVtstc/s-l400.jpg","timestamp":"2016-01-19T00:18:41.475Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/k5kAAOSwHnFVtstp/s-l400.jpg","timestamp":"2016-01-19T00:18:41.476Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/ubAAAOSwxN5WX3Ub/s-l400.jpg","timestamp":"2016-01-19T00:18:46.804Z"}
+{"level":"error","message":"ERROR - downloading image: http://thumbs1.ebaystatic.com/m/mjAgXRN77_GxAVVlGlt7aRw/140.jpg","timestamp":"2016-01-19T00:19:19.204Z"}
+{"level":"error","message":"ERROR - downloading image: http://thumbs3.ebaystatic.com/m/m-CHyGROAA5Vs5fv34qfXqQ/140.jpg","timestamp":"2016-01-19T00:19:19.206Z"}
+{"level":"error","message":"ERROR - downloading image: http://thumbs3.ebaystatic.com/m/mqGivn8FTbRbJZGqpvK9LTQ/140.jpg","timestamp":"2016-01-19T00:19:19.214Z"}
+{"level":"info","message":"generating diffs: /ajax/category-auctions.php?id=1175&sort=completed&limit=1000&offset=0","timestamp":"2016-01-19T00:22:38.272Z"}
+{"level":"info","message":"There are 132 new items added for 20160118","timestamp":"2016-01-19T00:22:38.277Z"}
+{"level":"error","message":"ERROR - downloading image: http://i.ebayimg.com/images/g/~qUAAOSwKtlWkuX3/s-l400.jpg : /Users/markgable/Sites/data/collectorsDB/advertising_tins/test-store/images/2016/01/18/xlfd/i_2.jpg","timestamp":"2016-01-19T00:23:33.246Z"}

@@ -14,6 +14,7 @@
 		today = new Date(), 
 		diffDirectory = config.sys_config.diffDirectory || "/diffs/",
 		rawDirectory = config.sys_config.rawDirectory || "/raw/",
+		storeDirectory = config.sys_config.storeDirectory || "/store/",
 		where = config.sys_config.system,
 		util = {};
 
@@ -83,7 +84,7 @@
 
 	function getStoreFilePath(category, location){
 		var location = location || where;
-		return config[location].dataRoot  + category + '/store/';
+		return config[location].dataRoot  + category + storeDirectory;
 	}
 
 	function getImagePath(category, dateStr, location){

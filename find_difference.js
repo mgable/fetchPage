@@ -136,10 +136,10 @@
 			console.info('saving index and diff');
 			util.save(storeFileName, storeFilePath, storeFile, JSON.stringify(allData), config.contentType.json);
 			util.logger.log("total items: " + allData.length);
-			util.logger.log("wrote file " + storeFile);
+			//util.logger.log("wrote file " + storeFile);
 			util.save(storeFileName, diffPath, diffFile, JSON.stringify(data), config.contentType.json);
 			util.logger.log("new items:  " + data.length);
-			util.logger.log("wrote file " + diffFile);
+			//util.logger.log("wrote file " + diffFile);
 		} else {
 			console.info("TEST: " + storeFile);
 			console.info("************* Just Testing - nothing saved!! ****************");

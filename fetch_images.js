@@ -13,9 +13,14 @@ function download(uri, imagePath, filename, callback){
 	var callback = callback || _.noop; // jshint ignore:line
 
 	if (downloadImages){
-		request.head(uri, function(/*err, res, body*/){
+		console.info("downloading: " + uri);
+		request.head(uri, function(err, res, body){
+			if (err){
+				util.logger.log("ERROR - downloading image: " + uri + " : " + imagePath + filename, 'error');
+				callback();
+			} 
 			request(uri).pipe(fs.createWriteStream(imagePath + filename)).on('close', callback).on('error', function(err){
-				util.logger.log(err, 'error');
+				util.logger.log("ERROR IN PIPE:" + err, 'error');
 				callback();
 			});
 		});
@@ -86,6 +91,7 @@ function getCompletedItemLink(data, link){
 }
 
 function fetchImages(dateStr, imagePath, items){
+	console.info("fetch images");
 	var dateRE = /\w{3,4}$/,
 		deferred = Q.defer();
 
@@ -119,12 +125,18 @@ function fetchAdditionalImages(dateStr, imagePath, items){
 		var deferred = Q.defer();
 
 		util.fetchPage(util.makeOptions(getCompletedItemUrl(item.link))).then(function (data){
-			return getCompletedItemLink(data, item.link);
+			var completedLink = getCompletedItemLink(data, item.link);
+			if (completedLink){
+				return completedLink;
+			} else {
+				return deferred.resolve(item);
+			}
 		}).then(function (data){
 			util.fetchPage(util.makeOptions(data)).then(function (data){
 				var additionalImages = collectAdditionalImages(data);
 				return downloadAdditionalImages(item, additionalImages, imagePath, dateStr);
 			}).then(function (data){
+				console.info("all images downloaded?!");
 				return deferred.resolve(data);
 			});
 		});

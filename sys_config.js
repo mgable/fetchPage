@@ -2,12 +2,14 @@
 
 (function(){
 	var system = "local",
-		diffDirectory = "/diffs/",
-		rawDirectory = "/raw/";
+		diffDirectory = "/test-diffs/",
+		rawDirectory = "/test-raw/",
+		storeDirectory = "/test-store/";
 
 	module.exports = {
 		system: system,
 		diffDirectory: diffDirectory,
-		rawDirectory: rawDirectory
+		rawDirectory: rawDirectory,
+		storeDirectory: storeDirectory
 	};
 })();
